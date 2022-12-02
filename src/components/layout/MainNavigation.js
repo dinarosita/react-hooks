@@ -9,10 +9,10 @@ function MainNavigation() {
       <nav>
         <ul>
             <li>
-                <Link to="/usestate">useState</Link>
+                <Link to="/react-hooks/usestate">useState</Link>
             </li>
             <li>
-                <Link to="/useEffect">useEffect</Link>
+                <Link to="/react-hooks/useeffect">useEffect</Link>
             </li>
         </ul>
       </nav>

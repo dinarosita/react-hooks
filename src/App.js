@@ -9,10 +9,10 @@ function App() {
     <div>
         <MainNavigation />
         <Switch>
-            <Route path="/usestate">
+            <Route path="/react-hooks/usestate">
                 <UseStatePage />
             </Route>
-            <Route path="/useeffect">
+            <Route path="/react-hooks/useeffect">
                 <UseEffectPage />
             </Route>
         </Switch>
