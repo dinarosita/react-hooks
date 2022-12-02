@@ -1,0 +1,16 @@
+.hookbox {
+  border: 5px double rgb(238, 191, 191);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.hookbox span {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.hookbox button {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}

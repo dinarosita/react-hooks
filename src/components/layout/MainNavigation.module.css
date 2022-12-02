@@ -1,0 +1,47 @@
+header {
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  background-color: rgb(136, 74, 74);
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header logo {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header li {
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a:hover {
+  background-color: indianred;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+.header a:active {
+  background-color: rgb(229, 156, 156);
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
