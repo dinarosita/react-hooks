@@ -2,6 +2,7 @@ import { Route, Switch} from "react-router-dom";
 
 import UseStatePage from "./pages/UseState";
 import UseEffectPage from "./pages/UseEffect";
+import UseMemoPage from "./pages/UseMemo";
 import MainNavigation from "./components/layout/MainNavigation";
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route path="/react-hooks/useeffect">
                 <UseEffectPage />
+            </Route>
+            <Route path="/react-hooks/usememo">
+                <UseMemoPage />
             </Route>
         </Switch>
     </div>

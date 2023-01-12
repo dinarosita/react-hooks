@@ -16,6 +16,9 @@ function MainNavigation() {
           <li>
             <Link to="/react-hooks/useeffect">useEffect</Link>
           </li>
+          <li>
+            <Link to="/react-hooks/usememo">useMemo</Link>
+          </li>
         </ul>
       </nav>
     </header>
