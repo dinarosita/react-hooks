@@ -1,0 +1,40 @@
+.mainbody h1 {
+    font-size: xx-large;
+    margin: 1rem 0 .8rem;
+}
+
+.mainbody ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mainbody li {
+    list-style: none;
+    margin-bottom: .2rem;
+}
+
+.hookbox {
+  border: 5px double rgb(238, 191, 191);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+
+.hookbox button {
+  padding: 0.2rem 0.8rem;
+  margin-right: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.hookbox span {
+    padding: 0.2rem 0.8rem;
+    margin-right: 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+.display {
+    padding: 0.2rem 0.8rem;
+    margin: 1rem 0;
+    font-size:xx-large;
+
+}

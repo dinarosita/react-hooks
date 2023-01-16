@@ -6,18 +6,18 @@ function MainNavigation() {
   return (
     <header className={classes.header}>
       <logo>
-        <Link to="/react-hooks">React hooks</Link>
+        <Link to="/">React hooks</Link>
       </logo>
       <nav>
         <ul>
           <li>
-            <Link to="/react-hooks/usestate">useState</Link>
+            <Link to="/usestate">useState</Link>
           </li>
           <li>
-            <Link to="/react-hooks/useeffect">useEffect</Link>
+            <Link to="/useeffect">useEffect</Link>
           </li>
           <li>
-            <Link to="/react-hooks/usememo">useMemo</Link>
+            <Link to="/usememo">useMemo</Link>
           </li>
         </ul>
       </nav>

@@ -1,29 +1,28 @@
 import { Route, Switch} from "react-router-dom";
 
+import Layout from "./components/layout/Layout.js";
 import UseStatePage from "./pages/UseState";
 import UseEffectPage from "./pages/UseEffect";
 import UseMemoPage from "./pages/UseMemo";
-import MainNavigation from "./components/layout/MainNavigation";
 
 function App() {
   return (
-    <div>
-        <MainNavigation />
+    <Layout>
         <Switch>
-            <Route path="/react-hooks" exact="true">
+            <Route path="/" exact="true">
                 <UseStatePage />
             </Route>
-            <Route path="/react-hooks/usestate">
+            <Route path="/usestate">
                 <UseStatePage />
             </Route>
-            <Route path="/react-hooks/useeffect">
+            <Route path="/useeffect">
                 <UseEffectPage />
             </Route>
-            <Route path="/react-hooks/usememo">
+            <Route path="/usememo">
                 <UseMemoPage />
             </Route>
         </Switch>
-    </div>
+    </Layout>    
   );
 }
 
