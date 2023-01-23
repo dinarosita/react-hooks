@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
-import classes from "./UseState.module.css";
+import classes from "../../pages/UseState.module.css"
 
-function UseStatePowPage() {
+function PowerCase() {
   const [power, setPower] = useState(2);
   const [label, setLabel] = useState("Click to start");
 
   function startPower() {
     setPower(2);
-    setLabel("Refreshed to 2");
+    setLabel("Started over");
   }
 
   function upPower() {
     setPower((prevPower) => prevPower * prevPower);
-    setLabel("Power up");
+    setLabel("Powered up");
   }
   console.log("rendered");
 
@@ -26,10 +26,10 @@ function UseStatePowPage() {
       <button onClick={startPower}>Start over</button>
       <button onClick={upPower}>Power up</button>
 
-      <div className={classes.display}>{power}</div>
+      <div className={classes.displayBox}>Number: {power}</div>
       <p>{label}</p>
     </div>
   );
 }
 
-export default UseStatePowPage;
+export default PowerCase;

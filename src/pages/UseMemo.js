@@ -1,13 +1,15 @@
-import UseMemoWithoutPage from "./UseMemoWithout";
-import UseMemoSlowFixPage from "./UseMemoSlowFix";
-import Body from "../components/layout/Body";
+import SlowFnWithoutUseMemo from "../hookcases/useMemo/SlowFnWithoutUseMemo";
+import SlowFunctionCase from "../hookcases/useMemo/SlowFunctionCase";
+import RefWithoutUseMemo from "../hookcases/useMemo/RefWithoutUseMemo";
+import ReferenceCase from "../hookcases/useMemo/ReferenceCase";
+import TopSection from "../layout/TopSection";
     
 import classes from "./UseState.module.css";
 
 function UseMemoPage() {
   return (
-    <section>
-      <Body
+    <main>
+      <TopSection
         hookType="Memo"
         videoLink="https://www.youtube.com/watch?v=THL1OPn72vo"
         videoTitle="Learn useMemo In 10 Minutes"
@@ -15,12 +17,18 @@ function UseMemoPage() {
       />
 
       <div className={classes.hookbox}>
-        <UseMemoWithoutPage />
+        <SlowFnWithoutUseMemo />
       </div>
       <div className={classes.hookbox}>
-        <UseMemoSlowFixPage />
+        <SlowFunctionCase />
       </div>
-    </section>
+      <div className={classes.hookbox}>
+        <RefWithoutUseMemo />
+      </div>
+      <div className={classes.hookbox}>
+        <ReferenceCase />
+      </div>
+    </main>
   );
 }
 export default UseMemoPage;

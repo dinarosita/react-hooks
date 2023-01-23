@@ -14,7 +14,7 @@ code {
 
 body {
   margin: 0.5rem;
-  color: rgb(136, 74, 74);
+  color: slategray;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -23,21 +23,36 @@ section {
 }
 
 button {
-  border: 1px solid rgb(136, 74, 74);
-  color: rgb(136, 74, 74);
+  border: 1px solid steelblue;
+  background-color: cadetblue;
+  color: white;
+  font-size: medium;
 }
 
 button:hover {
-  background-color: rgb(255, 234, 234);
+  background-color: steelblue;
 }
 
 button:active {
-  border-color: indianred;
-  background-color: rgb(255, 219, 219);
-  color: indianred;
+  background-color: cornflowerblue;
 }
 
 a {
     color: inherit;
     text-decoration: inherit;
+}
+
+h1 {
+    font-size: xx-large;
+    color: cadetblue;
+}
+
+h2 {
+    font-size: x-large;
+    color: cadetblue;
+}
+
+h3 {
+    font-size: large;
+    color: cadetblue;
 }

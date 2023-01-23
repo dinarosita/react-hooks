@@ -1,13 +1,13 @@
-import UseStateIncPage from "./UseStateInc";
-import UseStatePowPage from "./UseStatePow";
-import Body from "../components/layout/Body";
+import IncrementCase from "../hookcases/useState/IncrementCase";
+import PowerCase from "../hookcases/useState/PowerCase";
+import TopSection from "../layout/TopSection";
 
 import classes from "./UseState.module.css";
 
 function UseStatePage() {
   return (
-    <section>
-      <Body
+    <main>
+      <TopSection
         hookType="State"
         videoLink="https://www.youtube.com/watch?v=O6P86uwfdR0&t=19s"
         videoTitle="Learn useState in 15 Minutes"
@@ -15,12 +15,12 @@ function UseStatePage() {
       />
 
       <div className={classes.hookbox}>
-        <UseStateIncPage />
+        <IncrementCase />
       </div>
       <div className={classes.hookbox}>
-        <UseStatePowPage />
+        <PowerCase />
       </div>
-    </section>
+    </main>
   );
 }
 

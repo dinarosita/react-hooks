@@ -1,9 +1,11 @@
 import { Route, Switch} from "react-router-dom";
 
-import Layout from "./components/layout/Layout.js";
+import Layout from "./layout/Layout.js";
 import UseStatePage from "./pages/UseState";
 import UseEffectPage from "./pages/UseEffect";
 import UseMemoPage from "./pages/UseMemo";
+import UseRefPage from "./pages/UseRef";
+import UseContextPage from "./pages/UseContext";
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
             </Route>
             <Route path="/usememo">
                 <UseMemoPage />
+            </Route>
+            <Route path="/useref">
+                <UseRefPage />
+            </Route>
+            <Route path="/usecontext">
+                <UseContextPage />
             </Route>
         </Switch>
     </Layout>    

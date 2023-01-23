@@ -1,12 +1,12 @@
-import UseEffectWidthPage from "./UseEffectWidth";
-import UseEffectResourcePage from "./UseEffectResource";
+import WidthCase from "../hookcases/useEffect/WidthCase";
+import ResourceCase from "../hookcases/useEffect/ResourceCase";
 import classes from "./UseState.module.css";
-import Body from "../components/layout/Body";
+import TopSection from "../layout/TopSection";
 
 function UseEffectPage() {
   return (
-    <section>
-      <Body
+    <main>
+      <TopSection
         hookType="Effect"
         videoLink="https://www.youtube.com/watch?v=0ZJgIjIuY7U&t=6s"
         videoTitle="Learn useEffect in 13 Minutes"
@@ -14,12 +14,12 @@ function UseEffectPage() {
       />
 
       <div className={classes.hookbox}>
-        <UseEffectWidthPage />
+        <WidthCase />
       </div>
       <div className={classes.hookbox}>
-        <UseEffectResourcePage />
+        <ResourceCase />
       </div>
-    </section>
+    </main>
   );
 }
 

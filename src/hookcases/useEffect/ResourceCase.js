@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function UseEffectResourcePage() {
+function ResourceCase() {
   const [resourceType, setResourceType] = useState("Posts");
   const [items, setItems] = useState([]);
 
@@ -19,6 +19,7 @@ function UseEffectResourcePage() {
   return (
     <div>
       <h2>Resource Types</h2>
+      <p>The side effect of changing state of the resource type is fetching item list correspond to the type and isplayed in the screen.</p>
       <div>
         <button onClick={() => setResourceType("Posts")}>Posts</button>
         <button onClick={() => setResourceType("Users")}>Users</button>
@@ -34,4 +35,4 @@ function UseEffectResourcePage() {
   );
 }
 
-export default UseEffectResourcePage;
+export default ResourceCase;

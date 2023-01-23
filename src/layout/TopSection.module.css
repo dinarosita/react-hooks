@@ -1,6 +1,7 @@
 .mainbody h1 {
     font-size: xx-large;
     margin: 1rem 0 .8rem;
+    color: cadetblue;
 }
 
 .mainbody ul {
@@ -14,7 +15,7 @@
 }
 
 .hookbox {
-  border: 5px double rgb(238, 191, 191);
+  border: 5px double cadetblue;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin: 1rem 0;

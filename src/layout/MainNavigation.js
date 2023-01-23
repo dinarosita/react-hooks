@@ -19,6 +19,12 @@ function MainNavigation() {
           <li>
             <Link to="/usememo">useMemo</Link>
           </li>
+          <li>
+            <Link to="/useref">useRef</Link>
+          </li>
+          <li>
+            <Link to="/usecontext">useContext</Link>
+          </li>
         </ul>
       </nav>
     </header>

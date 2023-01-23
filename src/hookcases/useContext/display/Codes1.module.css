@@ -1,0 +1,19 @@
+.notes h3,
+.notes pre {
+    padding: 0;
+    margin: 0;
+}
+
+.notes div {
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    padding: .5rem;
+}
+.notes {
+    display: flex;
+    gap: .5rem;
+    flex: 1;
+}
+.notes pre {
+    overflow-wrap:break-word
+}

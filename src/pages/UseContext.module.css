@@ -2,15 +2,16 @@
   border: 5px double cadetblue;
   border-radius: 0.5rem;
   margin: 1rem 0;
+  padding: .5rem
 }
 
-.hookbox>div {
+.hookbox > div {
   padding: 0.5rem 1rem;
 }
 
 .hookbox button {
   padding: 0.2rem 0.8rem;
-  margin-right: 0.5rem;
+  margin: 0.5rem;
   border-radius: 0.3rem;
 }
 
@@ -21,13 +22,12 @@
 }
 
 .displayBox {
-    font-size: x-large;
-    margin: .5rem 0 0;
+  font-size: x-large;
+  margin: 0.5rem 0 0;
 }
 
-
 .hookbox .divbox {
-    border: 5px double cadetblue;
-    border-radius: 5px;
-    margin: .5rem 0;
+  border: 5px double cadetblue;
+  border-radius: 5px;
+  margin: 0.5rem 0;
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function UseEffectWidthPage() {
+function WidthCase() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleResize = () => {
@@ -18,8 +18,9 @@ function UseEffectWidthPage() {
   return (
     <div>
       <h2>Window width: {windowWidth}</h2>
+      <p>Window addEventListener is added to the useEffect function to fluidly detect the change in the width, then as side effect, the width is displayed back on the screen fluidly.</p>
     </div>
   );
 }
 
-export default UseEffectWidthPage;
+export default WidthCase;

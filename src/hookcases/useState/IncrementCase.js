@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function UseStateIncPage() {
+function IncrementCase() {
   const [count, setCount] = useState(4);
   const [action, setAction] = useState("Click to start");
   function decrementCount() {
@@ -16,6 +16,7 @@ function UseStateIncPage() {
   return (
     <div>
       <h2>Increments</h2>
+      <p>The number is the state and the increment and decrement button trigger the change to the state (setState).</p>
       <button onClick={decrementCount}>-</button>
       <span>{count}</span>
       <button onClick={incrementCount}>+</button>
@@ -24,4 +25,4 @@ function UseStateIncPage() {
   );
 }
 
-export default UseStateIncPage;
+export default IncrementCase;
