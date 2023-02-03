@@ -11,7 +11,7 @@ function TopSection(props) {
         <li>
           <a href={props.noteLink} target="_blank" rel="noopener noreferrer">CodeyLuwak — React use{props.hookType}</a>
         </li>
-        <li>Hook cases — coding/reactjs/<b>react-hooks</b>/src/hookcases/<b>use{props.hookType}</b></li>
+        <li>Folder — coding/reactjs/<b>react-hooks</b>/src/pages/<b>use{props.hookType}</b></li>
       </ul>
     </section>
   );

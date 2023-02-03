@@ -25,6 +25,27 @@ function MainNavigation() {
           <li>
             <Link to="/usecontext">useContext</Link>
           </li>
+          <li>
+            <Link to="/usereducer">useReducer</Link>
+          </li>
+          <li>
+            <Link to="/usecallback">useCallback</Link>
+          </li>
+          <li>
+            <Link to="/customhooks">Custom Hooks</Link>
+          </li>
+          <li>
+            <Link to="/uselayouteffect">useLayoutEffect</Link>
+          </li>
+          <li>
+            <Link to="/usetransition">useTransition</Link>
+          </li>
+          <li>
+            <Link to="/usedeferredvalue">useDeferredValue</Link>
+          </li>
+          <li>
+            <Link to="/usetemplate">useTemplate</Link>
+          </li>
         </ul>
       </nav>
     </header>

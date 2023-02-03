@@ -42,17 +42,26 @@ a {
     text-decoration: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: cadetblue;
+}
+
 h1 {
     font-size: xx-large;
-    color: cadetblue;
 }
 
 h2 {
     font-size: x-large;
-    color: cadetblue;
 }
 
 h3 {
     font-size: large;
-    color: cadetblue;
+}
+
+h4 {
+    font-size: medium;
+}
+
+pre + h4 {
+    margin: 5rem;
 }
