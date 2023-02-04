@@ -11,7 +11,7 @@ export function useDisplayUpdate() {
     return useContext(DisplayUpdateContext);
 }
 
-export function ToggleCodeProvider({ children }) {
+export function ShowHideProvider({ children }) {
     const [display, setDisplay] = useState(false);
 
     function toggleDisplay() {

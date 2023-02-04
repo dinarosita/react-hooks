@@ -4,7 +4,7 @@ import RefWithoutUseMemo from "./RefWithoutUseMemo";
 import ReferenceCase from "./ReferenceCase";
 import TopSection from "../../layout/TopSection";
 
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 
 function UseMemoPage() {
   const text1 = String.raw`const lastReturn = useMemo(() => {
@@ -14,7 +14,7 @@ function UseMemoPage() {
   return (
     <main>
       <TopSection
-        hookType="Memo"
+        hookName="Memo"
         videoLink="https://www.youtube.com/watch?v=THL1OPn72vo"
         videoTitle="Learn useMemo In 10 Minutes"
         noteLink="https://dinarosita.github.io/codeyluwak/react_usememo.html"

@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 
 export default function EffectCounter() {
   const [count, setCount] = useState(0);

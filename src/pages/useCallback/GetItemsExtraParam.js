@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 import ListExtraParam from "./ListExtraParam";
 
 export default function GetItemsExtraParam() {

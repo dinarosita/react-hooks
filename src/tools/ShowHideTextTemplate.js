@@ -1,7 +1,6 @@
 import React from "react";
-import classes from "../../../pages/Generic.module.css";
 
-export default function TheCodes() {
+export default function UseHookCodeText() {
   const title1 = "AppName.js";
   const text1 = String.raw`
 Content
@@ -16,7 +15,7 @@ Content
 `;
 
   return (
-    <div className={classes.flexbox}>
+    <div>
       <div>
         <h3>{title1}</h3>
         <pre>{text1}</pre>

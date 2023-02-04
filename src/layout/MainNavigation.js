@@ -5,46 +5,43 @@ import classes from "./MainNavigation.module.css";
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <logo>
-        <Link to="/">React hooks</Link>
-      </logo>
+      <div className={classes.logo}>
+        <Link to="/react-hooks">ReactHooks</Link>
+      </div>
       <nav>
         <ul>
           <li>
-            <Link to="/usestate">useState</Link>
+            <Link to="/react-hooks/usestate">useState</Link>
           </li>
           <li>
-            <Link to="/useeffect">useEffect</Link>
+            <Link to="/react-hooks/usereducer">useReducer</Link>
           </li>
           <li>
-            <Link to="/usememo">useMemo</Link>
+            <Link to="/react-hooks/usememo">useMemo</Link>
           </li>
           <li>
-            <Link to="/useref">useRef</Link>
+            <Link to="/react-hooks/usecallback">useCallback</Link>
           </li>
           <li>
-            <Link to="/usecontext">useContext</Link>
+            <Link to="/react-hooks/useref">useRef</Link>
           </li>
           <li>
-            <Link to="/usereducer">useReducer</Link>
+            <Link to="/react-hooks/useeffect">useEffect</Link>
           </li>
           <li>
-            <Link to="/usecallback">useCallback</Link>
+            <Link to="/react-hooks/uselayouteffect">useLayoutEffect</Link>
           </li>
           <li>
-            <Link to="/customhooks">Custom Hooks</Link>
+            <Link to="/react-hooks/usecontext">useContext</Link>
           </li>
           <li>
-            <Link to="/uselayouteffect">useLayoutEffect</Link>
+            <Link to="/react-hooks/usetransition">useTransition</Link>
           </li>
           <li>
-            <Link to="/usetransition">useTransition</Link>
+            <Link to="/react-hooks/usedeferredvalue">useDeferredValue</Link>
           </li>
           <li>
-            <Link to="/usedeferredvalue">useDeferredValue</Link>
-          </li>
-          <li>
-            <Link to="/usetemplate">useTemplate</Link>
+            <Link to="/react-hooks/customhooks">Custom Hooks</Link>
           </li>
         </ul>
       </nav>

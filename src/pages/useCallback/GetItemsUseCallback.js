@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 import List from "./List.js";
 
 export default function GetItemsUseCallback() {

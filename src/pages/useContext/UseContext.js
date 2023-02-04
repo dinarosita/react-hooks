@@ -3,7 +3,7 @@ import ThemeApp from "./theme/ThemeApp";
 import MyThemeApp from "./mytheme/MyThemeApp";
 import TopSection from "../../layout/TopSection";
 
-import { ToggleCodeProvider } from "../../tools/ToggleCodeContext"
+import { ShowHideProvider } from "../../tools/ToggleContext"
 import FunctionVsClassButton from "./notes/FunctionVsClassButton";
 import SimplifyFunctionButton from "./notes/SimplifyFunctionButton";
 
@@ -13,7 +13,7 @@ function UseContextPage() {
   return (
     <main>
       <TopSection
-        hookType="Context"
+        hookName="Context"
         videoLink="https://www.youtube.com/watch?v=5LrDIWkK_Bc"
         videoTitle="Learn useContext In 13 Minutes"
         noteLink="https://dinarosita.github.io/codeyluwak/react_usecontext.html"
@@ -29,9 +29,9 @@ function UseContextPage() {
           </p>
 
           <PreThemeApp />
-          <ToggleCodeProvider>
+          <ShowHideProvider>
             <FunctionVsClassButton />
-          </ToggleCodeProvider>
+          </ShowHideProvider>
         </div>
 
         <div className={classes.hookbox}>
@@ -42,9 +42,9 @@ function UseContextPage() {
           </p>
 
           <ThemeApp />
-          <ToggleCodeProvider>
+          <ShowHideProvider>
             <SimplifyFunctionButton />
-          </ToggleCodeProvider>
+          </ShowHideProvider>
         </div>
 
         <div className={classes.hookbox}>

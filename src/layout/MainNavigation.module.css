@@ -1,19 +1,23 @@
-header {
+.header {
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 
   background-color: cadetblue;
   color: white;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 
-.header logo {
+.logo {
+  color: whitesmoke;
   font-size: xx-large;
-  font-weight: bold;
+  font-weight: bolder;
+}
+
+.header nav {
 }
 
 .header ul {
@@ -21,26 +25,27 @@ header {
   flex-direction: row;
   list-style: none;
   flex-wrap: wrap;
-  gap: 0;
+  margin: 0;
 }
 
 .header li {
   border-radius: 0.2rem;
-  padding: 0.2rem;
+  padding: 0.2rem 0.7rem;
+  width: 10rem;
 }
 
 .header a {
   color: white;
   text-decoration: none;
-  padding: .5rem;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 
 .header a:hover {
-  background-color: steelblue;
+  background-color: whitesmoke;
+  color: cadetblue;
   font-weight: bold;
 }
 
 .header a:active {
-    border: 1px solid white;
+  border: 1px solid white;
 }

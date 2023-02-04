@@ -1,6 +1,6 @@
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 import TopSection from "../../layout/TopSection";
-import { ToggleCodeProvider } from "../../tools/ToggleCodeContext";
+import { ShowHideProvider } from "../../tools/ToggleContext";
 import UseDeferredValueNotes from "./notes/UseDeferredValueNotes";
 import RegularInput from "./RegularInput";
 import DeferredInput from "./DeferredInput";
@@ -21,7 +21,7 @@ function UseDeferredValuePage() {
   return (
     <main>
       <TopSection
-        hookType="DeferredValue"
+        hookName="DeferredValue"
         videoLink=""
         videoTitle="Learn useDeferredValue in x Minutes"
         noteLink="https://dinarosita.github.io/codeyluwak/react_usedeferredvalue.html"
@@ -70,9 +70,9 @@ function UseDeferredValuePage() {
           </div>
         </div>
 
-        <ToggleCodeProvider>
+        <ShowHideProvider>
           <UseDeferredValueNotes />
-        </ToggleCodeProvider>
+        </ShowHideProvider>
       </section>
     </main>
   );

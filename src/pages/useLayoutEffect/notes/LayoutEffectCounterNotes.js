@@ -1,5 +1,5 @@
 import React from "react";
-import { useDisplay, useDisplayUpdate } from "../../../tools/ToggleCodeContext";
+import { useDisplay, useDisplayUpdate } from "../../../tools/ToggleContext";
 import LayoutEffectCounterCodes from "./LayoutEffectCounterCodes";
 
 export default function LayoutEffectCounterNotes() {

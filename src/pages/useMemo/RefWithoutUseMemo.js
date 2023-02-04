@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect, useRef } from "react";
-import classes from "../../pages/Generic.module.css";
+import classes from "../../layout/Page.module.css";
 
 function RefWithoutUseMemo() {
   const [number, setNumber] = useState(0);

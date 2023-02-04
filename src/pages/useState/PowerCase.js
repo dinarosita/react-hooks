@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import classes from "../../pages/Generic.module.css"
+import ShowHideButton from "../../tools/ShowHideButton";
+import { ShowHideProvider } from "../../tools/ToggleContext";
+import PowerText from "./PowerText";
 
-function PowerCase() {
+export default function PowerCase() {
   const [power, setPower] = useState(2);
   const [label, setLabel] = useState("Click to start");
 
@@ -23,12 +25,13 @@ function PowerCase() {
   return (
     <div>
       <h2>Power</h2>
-      <div className={classes.displaybox}>Number: {power}</div>
-      <button onClick={startPower}>Start over</button>
-      <button onClick={upPower}>Power up</button>     
-      <p>{label}</p>
+      <button onClick={startPower}>Start over</button>{" "}
+      <button onClick={upPower}>Power up</button>
+      <p>Action: {label}</p>
+      <p>Number: {power}</p>
+      <ShowHideProvider>
+        <ShowHideButton textFile=<PowerText /> />
+      </ShowHideProvider>
     </div>
   );
 }
-
-export default PowerCase;

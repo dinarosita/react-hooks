@@ -1,8 +1,8 @@
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 import TopSection from "../../layout/TopSection";
 import CountApp from "./countApp/CountApp";
 import CountAppUsestate from "./countApp/CountAppUsestate";
-import { ToggleCodeProvider } from "../../tools/ToggleCodeContext";
+import { ShowHideProvider } from "../../tools/ToggleContext";
 import ReducerVsStateButton from "./notes/ReducerVsStateButton";
 import MyCount2App from "./countApp/MyCount2App";
 import MyCount3App from "./countApp/MyCount3App";
@@ -15,7 +15,7 @@ export default function UseReducerPage() {
   return (
     <main>
       <TopSection
-        hookType="Reducer"
+        hookName="Reducer"
         videoLink="https://www.youtube.com/watch?v=kK_Wqx3RnHk&t=51s"
         videoTitle="Learn useReducer in 20 Minutes"
         noteLink="https://dinarosita.github.io/codeyluwak/react_usereducer.html"
@@ -55,9 +55,9 @@ export default function UseReducerPage() {
           </div>
         </div>
 
-        <ToggleCodeProvider>
+        <ShowHideProvider>
           <ReducerVsStateButton />
-        </ToggleCodeProvider>
+        </ShowHideProvider>
 
         <div className={classes.spacer} />
         <h3>Make my own</h3>

@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../../pages/Generic.module.css";
+import classes from "../../../layout/Page.module.css";
 
 export default function UseLocalStorageCodes() {
   const title1 = "MainApp.js useState";

@@ -1,6 +1,6 @@
 import React from "react";
 import FunctionVsClassText from "./FunctionVsClassText"
-import { useDisplay, useDisplayUpdate } from "../../../tools/ToggleCodeContext";
+import { useDisplay, useDisplayUpdate } from "../../../tools/ToggleContext";
 
 function FunctionVsClassButton(){
     const show = useDisplay();

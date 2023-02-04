@@ -1,18 +1,3 @@
-.mainbody h1 {
-    font-size: xx-large;
-    margin: 1rem 0 .8rem;
-    color: cadetblue;
-}
-
-.mainbody ul {
-    padding: 0;
-    margin: 0;
-}
-
-.mainbody li {
-    list-style: none;
-    margin-bottom: .2rem;
-}
 
 .hookbox {
   border: 5px double cadetblue;
@@ -38,4 +23,14 @@
     margin: 1rem 0;
     font-size:xx-large;
 
+}
+
+.tagline {
+    font-size: larger;
+    font-weight: bold;
+    color: cadetblue;
+}
+
+.wds {
+    color: indianred;
 }

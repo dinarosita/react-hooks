@@ -5,13 +5,13 @@ import MistakeCase from "./MistakeCase";
 
 import TopSection from "../../layout/TopSection";
 
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 
 function UseRefPage() {
   return (
     <main>
       <TopSection
-        hookType="Ref"
+        hookName="Ref"
         videoLink="https://www.youtube.com/watch?v=t2ypzz6gJm0"
         videoTitle="Learn useRef In 11 Minutes"
         noteLink="https://dinarosita.github.io/codeyluwak/react_useref.html"

@@ -4,10 +4,6 @@
   margin: 1rem 0;
   padding: 1rem;
 }
-/* 
-.hookbox>div {
-  padding: 0.5rem 1rem;
-} */
 
 .hookbox h2 {
   margin: 0;
@@ -83,24 +79,4 @@ pre + h4 {
   padding: 0.5rem;
 }
 
-.formula {
-    border: 3px solid pink;
-    border-radius: 10px;
-    display: inline-block;
-    padding: .8rem 1rem;
-    font-weight: bold;
-    font-size: 1rem;
-}
 
-.formula span {
-    margin: 0;
-    padding: 0;
-}
-
-.var {
-    color:cadetblue;
-}
-
-.emp {
-    color: indianred;
-}

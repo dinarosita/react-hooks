@@ -2,17 +2,11 @@ import classes from "./TopSection.module.css";
 
 function TopSection(props) {
   return (
-    <section className={classes.mainbody}>
-      <h1>use{props.hookType}</h1>
-      <ul>
-        <li>
-          <a href={props.videoLink} target="_blank" rel="noopener noreferrer">WebDev — {props.videoTitle}</a>
-        </li>
-        <li>
-          <a href={props.noteLink} target="_blank" rel="noopener noreferrer">CodeyLuwak — React use{props.hookType}</a>
-        </li>
-        <li>Folder — coding/reactjs/<b>react-hooks</b>/src/pages/<b>use{props.hookType}</b></li>
-      </ul>
+    <section className={classes.hookbox}>
+      <h1>use{props.hookName}</h1>
+      <p className={classes.tagline}>{props.tagline}</p>
+      <div>{props.notes}</div>
+      <p className={classes.wds}><a href={props.videoLink} target="_blank" rel="noopener noreferrer">Watch WDS video</a></p>
     </section>
   );
 }

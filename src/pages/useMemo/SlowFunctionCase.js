@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import classes from "../../pages/Generic.module.css";
+import classes from "../../layout/Page.module.css";
 function SlowFunctionCase() {
   const [number, setNumber] = useState(0);
   const [dark, setDark] = useState(false);

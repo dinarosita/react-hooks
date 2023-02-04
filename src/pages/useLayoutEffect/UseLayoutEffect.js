@@ -1,6 +1,6 @@
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 import TopSection from "../../layout/TopSection";
-import { ToggleCodeProvider } from "../../tools/ToggleCodeContext";
+import { ShowHideProvider } from "../../tools/ToggleContext";
 import EffectCounter from "./EffectCounter";
 import LayoutEffectCounter from "./LayoutEffectCounter";
 import PopupLayoutEffect from "./PopupLayoutEffect";
@@ -14,7 +14,7 @@ function UseLayoutEffectPage() {
   return (
     <main>
       <TopSection
-        hookType="LayoutEffect"
+        hookName="LayoutEffect"
         videoLink="https://youtu.be/wU57kvYOxT4?list=PLZlA0Gpn_vH8EtggFGERCwMY5u5hOjf-h"
         videoTitle="Learn useLayoutEffect in 5 Minutes"
         noteLink="https://dinarosita.github.io/codeyluwak/react_uselayouteffect.html"
@@ -49,9 +49,9 @@ function UseLayoutEffectPage() {
           </React.StrictMode>
         </div>
 
-        <ToggleCodeProvider>
+        <ShowHideProvider>
           <LayoutEffectPopupNotes />
-        </ToggleCodeProvider>
+        </ShowHideProvider>
       </section>
 
       <section className={classes.hookbox}>
@@ -67,9 +67,9 @@ function UseLayoutEffectPage() {
           </div>
         </div>
 
-        <ToggleCodeProvider>
+        <ShowHideProvider>
           <LayoutEffectCounterNotes />
-        </ToggleCodeProvider>
+        </ShowHideProvider>
       </section>
     </main>
   );

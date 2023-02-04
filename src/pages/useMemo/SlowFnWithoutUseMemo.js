@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "../../pages/Generic.module.css";
+import classes from "../../layout/Page.module.css";
 
 function SlowFnWithoutUseMemo() {
   const [number, setNumber] = useState(0);

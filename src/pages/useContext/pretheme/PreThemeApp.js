@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PreFunctionConsumer from "./PreFunctionConsumer";
 import PreClassConsumer from "./PreClassConsumer";
-import classes from "../../../pages/Generic.module.css";
+import classes from "../../../layout/Page.module.css";
 
 export const PreThemeContext = React.createContext();
 

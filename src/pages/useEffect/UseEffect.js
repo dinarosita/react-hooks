@@ -1,13 +1,13 @@
 import WidthCase from "./WidthCase";
 import ResourceCase from "./ResourceCase";
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 import TopSection from "../../layout/TopSection";
 
 function UseEffectPage() {
   return (
     <main>
       <TopSection
-        hookType="Effect"
+        hookName="Effect"
         videoLink="https://www.youtube.com/watch?v=0ZJgIjIuY7U&t=6s"
         videoTitle="Learn useEffect in 13 Minutes"
         noteLink="https://dinarosita.github.io/codeyluwak/react_useeffect.html"

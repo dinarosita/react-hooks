@@ -1,6 +1,6 @@
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 import TopSection from "../../layout/TopSection";
-import { ToggleCodeProvider } from "../../tools/ToggleCodeContext";
+import { ShowHideProvider } from "../../tools/ToggleContext";
 import GetItemsWithoutCallback from "./GetItemsWithoutCallback";
 import GetItemsUseCallback from "./GetItemsUseCallback";
 import UseCallbackNote from "./notes/UseCallbackNote";
@@ -10,7 +10,7 @@ export default function useCallbackPage() {
   return (
     <main>
       <TopSection
-        hookType="Callback"
+        hookName="Callback"
         videoLink="https://youtu.be/_AyFP5s69N4?list=PLZlA0Gpn_vH8EtggFGERCwMY5u5hOjf-h"
         videoTitle="Learn useCallback in 8 Minutes"
         noteLink="https://dinarosita.github.io/codeyluwak/react_usecallback.html"
@@ -30,9 +30,9 @@ export default function useCallbackPage() {
           </div>
         </div>
 
-        <ToggleCodeProvider>
+        <ShowHideProvider>
           <UseCallbackNote />
-        </ToggleCodeProvider>
+        </ShowHideProvider>
       </div>
     </main>
   );

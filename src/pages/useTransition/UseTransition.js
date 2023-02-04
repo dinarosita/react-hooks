@@ -1,6 +1,6 @@
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 import TopSection from "../../layout/TopSection";
-import { ToggleCodeProvider } from "../../tools/ToggleCodeContext";
+import { ShowHideProvider } from "../../tools/ToggleContext";
 import TransitionNotes from "./notes/TransitionNotes";
 import ResponsiveForm from "./ResponsiveForm";
 import SluggishForm from "./SluggishForm";
@@ -10,7 +10,7 @@ function UseTransitionPage() {
   return (
     <main>
       <TopSection
-        hookType="Transition"
+        hookName="Transition"
         videoLink="https://youtu.be/N5R6NL3UE7I?list=PLZlA0Gpn_vH8EtggFGERCwMY5u5hOjf-h"
         videoTitle="React 18 useTransition Hook Crash Course"
         noteLink="https://dinarosita.github.io/codeyluwak/react_usetransition.html"
@@ -80,9 +80,9 @@ function UseTransitionPage() {
           </div>
         </div>
         <p>Try typing something really long, like 2 sentences.</p>
-        <ToggleCodeProvider>
+        <ShowHideProvider>
           <TransitionNotes />
-        </ToggleCodeProvider>
+        </ShowHideProvider>
       </section>
     </main>
   );

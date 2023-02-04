@@ -1,7 +1,7 @@
 import React from "react";
 import UseCallbackCodes from "./UseCallbackCodes";
-import classes from "../../Generic.module.css";
-import { useDisplay, useDisplayUpdate } from "../../../tools/ToggleCodeContext";
+import classes from "../../../layout/Page.module.css";
+import { useDisplay, useDisplayUpdate } from "../../../tools/ToggleContext";
 
 export default function UseCallbackNote() {
   const show = useDisplay();

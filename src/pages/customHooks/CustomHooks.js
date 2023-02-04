@@ -1,8 +1,8 @@
 import React from "react";
-import classes from "../Generic.module.css";
+import classes from "../../layout/Page.module.css";
 import InputPersistence from "./InputPersistence";
 import InputRegular from "./InputRegular";
-import { ToggleCodeProvider } from "../../tools/ToggleCodeContext";
+import { ShowHideProvider } from "../../tools/ToggleContext";
 import UseLocalStorageNote from "./notes/UseLocalStorageNote";
 import MyInputForm from "./MyInputForm";
 import UseUpdateLoggerNote from "./notes/UseUpdateLoggerNote";
@@ -10,7 +10,7 @@ import UseUpdateLoggerNote from "./notes/UseUpdateLoggerNote";
 export default function CustomHooksPage() {
   return (
     <main>
-      <section className={classes.mainbody}>
+      <section className={classes.hookbox}>
         <h1>Custom Hooks</h1>
         <ul>
           <li>
@@ -55,9 +55,9 @@ export default function CustomHooksPage() {
           </div>
         </div>
 
-        <ToggleCodeProvider>
+        <ShowHideProvider>
           <UseLocalStorageNote />
-        </ToggleCodeProvider>
+        </ShowHideProvider>
       </section>
       <section className={classes.hookbox}>
         <h2>useUpdateLogger: Logging value changes</h2>
@@ -69,9 +69,9 @@ export default function CustomHooksPage() {
           </li>
           <li>useUpdateLogMine with key is used in "My form" above.</li>
         </ul>
-        <ToggleCodeProvider>
+        <ShowHideProvider>
           <UseUpdateLoggerNote />
-        </ToggleCodeProvider>
+        </ShowHideProvider>
       </section>
     </main>
   );

@@ -1,7 +1,7 @@
 import { Route, Switch} from "react-router-dom";
 
 import Layout from "./layout/Layout.js";
-import UseStatePage from "./pages/useState/UseState";
+import UseStatePage from "./pages/useState/UseStatePage";
 import UseEffectPage from "./pages/useEffect/UseEffect";
 import UseMemoPage from "./pages/useMemo/UseMemo";
 import UseRefPage from "./pages/useRef/UseRef";
@@ -13,48 +13,49 @@ import UseLayoutEffectPage from "./pages/useLayoutEffect/UseLayoutEffect";
 import UseTemplatePage from "./pages/useTemplate/UseTemplate.js";
 import UseTransitionPage from "./pages/useTransition/UseTransition.js";
 import UseDeferredValuePage from "./pages/useDeferredValue/UseDeferredValue.js";
+import Home from "./pages/Home.js";
 
 function App() {
   return (
     <Layout>
         <Switch>
             <Route exact path={["/", "/react-hooks"]}>
-                <UseDeferredValuePage />
+                <Home />
             </Route>
-            <Route path="/usestate">
+            <Route path="/react-hooks/usestate">
                 <UseStatePage />
             </Route>
-            <Route path="/useeffect">
+            <Route path="/react-hooks/useeffect">
                 <UseEffectPage />
             </Route>
-            <Route path="/usememo">
+            <Route path="/react-hooks/usememo">
                 <UseMemoPage />
             </Route>
-            <Route path="/useref">
+            <Route path="/react-hooks/useref">
                 <UseRefPage />
             </Route>
-            <Route path="/usecontext">
+            <Route path="/react-hooks/usecontext">
                 <UseContextPage />
             </Route>
-            <Route path="/usereducer">
+            <Route path="/react-hooks/usereducer">
                 <UseReducerPage />
             </Route>
-            <Route path="/usecallback">
+            <Route path="/react-hooks/usecallback">
                 <UseCallbackPage />
             </Route>
-            <Route path="/customhooks">
+            <Route path="/react-hooks/customhooks">
                 <CustomHooksPage />
             </Route>
-            <Route path="/uselayouteffect">
+            <Route path="/react-hooks/uselayouteffect">
                 <UseLayoutEffectPage />
             </Route>
-            <Route path="/usetransition">
+            <Route path="/react-hooks/usetransition">
                 <UseTransitionPage />
             </Route>
-            <Route path="/usetemplate">
+            <Route path="/react-hooks/usetemplate">
                 <UseTemplatePage />
             </Route>
-            <Route path="/usedeferredvalue">
+            <Route path="/react-hooks/usedeferredvalue">
                 <UseDeferredValuePage />
             </Route>
         </Switch>
