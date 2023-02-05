@@ -3,7 +3,7 @@ import classes from "../../../layout/Page.module.css";
 
 export default function UseUpdateLoggerCodes() {
   const title1 = "MainApp.js";
-  const text1 = String.raw`...
+  const text1 = String.raw`
 function MainApp() {
   const [name, setName] = useLocalStorage("name", "");
   const [address, setAddress] = useLocalStorage("address", "");
@@ -17,7 +17,7 @@ function MainApp() {
 `;
 
   const title2 = "useUpdateLogger.js";
-  const text2 = String.raw`...
+  const text2 = String.raw`
 function useUpdateLogger(value) {
   useEffect(() => {
     console.log(value)
@@ -27,7 +27,7 @@ function useUpdateLogger(value) {
 `;
 
   const title3 = "MainApp.js";
-  const text3 = String.raw`...
+  const text3 = String.raw`
 function MainApp() {
   const [age, setAge] = useLocalStorage("age", "");
   const [trait, setTrait] = useLocalStorage("trait", "");
@@ -41,7 +41,7 @@ function MainApp() {
 `;
 
   const title4 = "useUpdateLogMine.js";
-  const text4 = String.raw`...
+  const text4 = String.raw`
 function useUpdateLogMine(key, value) {
   useEffect(() => {
     console.log(key, ": ", value)

@@ -1,11 +1,9 @@
 import React from "react";
-import classes from "../../../layout/Page.module.css";
+import classes from "../../layout/Global.module.css";
 
-export default function LayoutEffectPopupCodes() {
+export default function PopupText() {
   const title1 = "useEffect";
-  const text1 = String.raw`...
-
-function PopupEffect() {
+  const text1 = String.raw`function PopupEffect() {
   const [show, setShow] = useState(true);
   const popup = useRef();
   const button = useRef();
@@ -33,11 +31,9 @@ function PopupEffect() {
     </div>
   );
 }
-...`;
+`;
   const title2 = "useLayoutEffect";
-  const text2 = String.raw`...
-
-function PopupLayoutEffect() {
+  const text2 = String.raw`function PopupLayoutEffect() {
   const [show, setShow] = useState(true);
   const popup = useRef();
   const button = useRef();
@@ -65,12 +61,10 @@ function PopupLayoutEffect() {
     </div>
   );
 }
-...`;
+`;
 
 const title3 = "without effect";
-const text3 = String.raw`...
-
-function PopupWithoutEffect() {
+const text3 = String.raw`function PopupWithoutEffect() {
   const [show, setShow] = useState(true);
   const popup = useRef();
   const button = useRef();
@@ -90,11 +84,9 @@ function PopupWithoutEffect() {
       )}
     </div>
   );
-}
-...`;
-
+}`;
   return (
-    <div className={classes.flexbox}>
+    <div className={classes.cardGroup}>
       <div>
         <h3>{title1}</h3>
         <pre>{text1}</pre>

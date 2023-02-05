@@ -21,7 +21,7 @@ function SlowFnWithoutUseMemo() {
       <button onClick={() => setDark((prevDark) => !prevDark)}>
         Change Theme
       </button>
-      <div className={classes.displaybox}>Doubled: {doubleNumber}</div>
+      <div className={classes.displaySinglebox}>Doubled: {doubleNumber}</div>
     </div>
   );
 }

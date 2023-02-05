@@ -40,8 +40,8 @@ function UseDeferredValuePage() {
         </p>
 
         <pre className={classes.formula}>
-          const <span className={classes.var}>deferredState</span> = <span className={classes.emp}>useDeferredValue</span>(
-          <span className={classes.var}>state</span>)
+          const <span className={classes.variable}>deferredState</span> = <span className={classes.emp}>useDeferredValue</span>(
+          <span className={classes.variable}>state</span>)
         </pre>
       </section>
 

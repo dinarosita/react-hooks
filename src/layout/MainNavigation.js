@@ -14,25 +14,28 @@ function MainNavigation() {
             <Link to="/react-hooks/usestate">useState</Link>
           </li>
           <li>
-            <Link to="/react-hooks/usereducer">useReducer</Link>
+            <Link to="/react-hooks/useeffect">useEffect</Link>
           </li>
           <li>
-            <Link to="/react-hooks/usememo">useMemo</Link>
-          </li>
-          <li>
-            <Link to="/react-hooks/usecallback">useCallback</Link>
+            <Link to="/react-hooks/usememo">useMemo (slow)</Link>
           </li>
           <li>
             <Link to="/react-hooks/useref">useRef</Link>
           </li>
           <li>
-            <Link to="/react-hooks/useeffect">useEffect</Link>
-          </li>
-          <li>
-            <Link to="/react-hooks/uselayouteffect">useLayoutEffect</Link>
-          </li>
-          <li>
             <Link to="/react-hooks/usecontext">useContext</Link>
+          </li>
+          <li>
+            <Link to="/react-hooks/usereducer">useReducer</Link>
+          </li>
+          <li>
+            <Link to="/react-hooks/usecallback">useCallback</Link>
+          </li>
+          <li>
+            <Link to="/react-hooks/uselayouteffectpage">useLayoutEffect</Link>
+          </li>
+          <li>
+            <Link to="/react-hooks/usereducer">useReducer</Link>
           </li>
           <li>
             <Link to="/react-hooks/usetransition">useTransition</Link>

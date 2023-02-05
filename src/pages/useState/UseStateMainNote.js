@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../layout/Note.module.css";
+import classes from "../../layout/Global.module.css";
 
 export default function UseStateMainNote() {
   return (
@@ -12,10 +12,10 @@ export default function UseStateMainNote() {
         state value will be used, until setState update it with new value.
       </p>
       <pre className={classes.formula}>
-        const [<span className={classes.var}>state</span>,{" "}
-        <span className={classes.var}>setState</span>] ={" "}
-        <span className={classes.func}>useState</span>(
-        <span className={classes.var}>initialState</span>)
+        const [<span className={classes.variable}>state</span>,{" "}
+        <span className={classes.variable}>setState</span>] ={" "}
+        <span className={classes.thehook}>useState</span>(
+        <span className={classes.variable}>initialState</span>)
       </pre>
     </div>
   );

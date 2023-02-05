@@ -1,12 +1,12 @@
 import { useState } from "react";
-import classes from "../../layout/CaseApp.module.css";
+import classes from "../../layout/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
 import IncrementText from "./IncrementText";
 
 export default function IncrementCase() {
   const [count, setCount] = useState(4);
-  const [action, setAction] = useState("Click to start");
+  const [action, setAction] = useState("Let's go!");
   function decrementCount() {
     setCount((prevCount) => prevCount - 1);
     setAction("Going down");
@@ -18,16 +18,20 @@ export default function IncrementCase() {
   }
 
   return (
-    <div>
-      <h2>Increment</h2>
-      <button onClick={decrementCount}>-</button>{" "}
-      <span className={classes.digitalBox}>{count}</span>{" "}
-      <button onClick={incrementCount}>+</button>
-      <p>Action: {action}</p>
-
-      <ShowHideProvider>
-        <ShowHideButton textFile=<IncrementText /> />
-      </ShowHideProvider>
-    </div>
+    <section>
+      <div className={classes.niceFlow}>
+        <h2>Increment</h2>
+        <div className={classes.cardItem}>
+          <div className={classes.displayMulti}>
+            <button onClick={decrementCount}>-</button> <span>{count}</span>{" "}
+            <button onClick={incrementCount}>+</button>
+          </div>
+          <div>Action: {action}</div>
+        </div>
+        <ShowHideProvider>
+          <ShowHideButton textFile=<IncrementText /> />
+        </ShowHideProvider>
+      </div>
+    </section>
   );
 }

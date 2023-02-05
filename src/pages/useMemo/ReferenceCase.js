@@ -34,7 +34,7 @@ function ReferenceCase() {
       <button onClick={() => setDark((prevDark) => !prevDark)}>
         Change Theme
       </button>
-      <div className={classes.displaybox}>Doubled: {doubleNumber}</div>
+      <div className={classes.displaySinglebox}>Doubled: {doubleNumber}</div>
       <p>Theme render count: {renderCount.current}</p>
     </div>
   );

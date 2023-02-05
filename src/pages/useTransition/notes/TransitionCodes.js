@@ -3,9 +3,7 @@ import classes from "../../../layout/Page.module.css";
 
 export default function TransitionCodes() {
   const title1 = "Sluggish without useTransition";
-  const text1 = String.raw`...
-
-function SluggishForm() {
+  const text1 = String.raw`function SluggishForm() {
   const [input, setInput] = useState("");
   const [list, setList] = useState([]);
 
@@ -30,11 +28,9 @@ function SluggishForm() {
     </div>
   );
 }
-...`;
+`;
   const title2 = "Responsive with useTransition";
-  const text2 = String.raw`...
-
-function ResponsiveForm() {
+  const text2 = String.raw`function ResponsiveForm() {
   const [isPending, startTransition] = useTransition();
   const [input, setInput] = useState("");
   const [list, setList] = useState([]);

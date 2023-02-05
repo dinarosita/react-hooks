@@ -2,18 +2,17 @@ import { Route, Switch} from "react-router-dom";
 
 import Layout from "./layout/Layout.js";
 import UseStatePage from "./pages/useState/UseStatePage";
-import UseEffectPage from "./pages/useEffect/UseEffect";
 import UseMemoPage from "./pages/useMemo/UseMemo";
 import UseRefPage from "./pages/useRef/UseRef";
 import UseContextPage from "./pages/useContext/UseContext";
 import UseReducerPage from "./pages/useReducer/UseReducer";
 import UseCallbackPage from "./pages/useCallback/UseCallback";
 import CustomHooksPage from "./pages/customHooks/CustomHooks";
-import UseLayoutEffectPage from "./pages/useLayoutEffect/UseLayoutEffect";
-import UseTemplatePage from "./pages/useTemplate/UseTemplate.js";
+import UseLayoutEffectPage from "./pages/useLayoutEffect/UseLayoutEffectPage";
 import UseTransitionPage from "./pages/useTransition/UseTransition.js";
 import UseDeferredValuePage from "./pages/useDeferredValue/UseDeferredValue.js";
 import Home from "./pages/Home.js";
+import UseEffectPage from "./pages/useEffect/UseEffectPage.js";
 
 function App() {
   return (
@@ -46,14 +45,11 @@ function App() {
             <Route path="/react-hooks/customhooks">
                 <CustomHooksPage />
             </Route>
-            <Route path="/react-hooks/uselayouteffect">
+            <Route path="/react-hooks/uselayouteffectpage">
                 <UseLayoutEffectPage />
             </Route>
             <Route path="/react-hooks/usetransition">
                 <UseTransitionPage />
-            </Route>
-            <Route path="/react-hooks/usetemplate">
-                <UseTemplatePage />
             </Route>
             <Route path="/react-hooks/usedeferredvalue">
                 <UseDeferredValuePage />

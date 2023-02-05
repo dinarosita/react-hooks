@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
+import classes from "../../layout/Global.module.css";
 import PowerText from "./PowerText";
 
 export default function PowerCase() {
   const [power, setPower] = useState(2);
-  const [label, setLabel] = useState("Click to start");
+  const [label, setLabel] = useState("Let's power up!");
 
   function startPower() {
     setPower(2);
@@ -23,15 +24,22 @@ export default function PowerCase() {
   }, [power]);
 
   return (
-    <div>
-      <h2>Power</h2>
-      <button onClick={startPower}>Start over</button>{" "}
-      <button onClick={upPower}>Power up</button>
-      <p>Action: {label}</p>
-      <p>Number: {power}</p>
-      <ShowHideProvider>
-        <ShowHideButton textFile=<PowerText /> />
-      </ShowHideProvider>
-    </div>
+    <section>
+      <div className={classes.niceFlow}>
+        <h2>Power</h2>
+        <div className={classes.cardItem}>
+          <div className={classes.displayMulti}>
+            <button onClick={startPower}>Start over</button>{" "}
+            <button onClick={upPower}>Power up</button>
+          </div>
+          <div className={classes.displaySingle}>Number: {power}</div>
+
+          <div>Action: {label}</div>
+        </div>
+        <ShowHideProvider>
+          <ShowHideButton textFile=<PowerText /> />
+        </ShowHideProvider>
+      </div>
+    </section>
   );
 }

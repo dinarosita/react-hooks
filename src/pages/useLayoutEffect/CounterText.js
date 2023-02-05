@@ -1,11 +1,9 @@
 import React from "react";
-import classes from "../../../layout/Page.module.css";
+import classes from "../../layout/Global.module.css";
 
-export default function LayoutEffectCounterCodes() {
+export default function CounterText() {
   const title1 = "useEffect";
-  const text1 = String.raw`...
-
-function EffectCounter() {
+  const text1 = String.raw`function CounterEffect() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -20,13 +18,9 @@ function EffectCounter() {
       </button>
     </div>
   );
-}
-
-...`;
+}`;
   const title2 = "useLayoutEffect";
-  const text2 = String.raw`...
-
-function EffectCounter() {
+  const text2 = String.raw`function CounterEffect() {
   const [count, setCount] = useState(0);
 
   useLayoutEffect(() => {
@@ -41,12 +35,10 @@ function EffectCounter() {
       </button>
     </div>
   );
-}
-
-...`;
+}`;
 
   return (
-    <div className={classes.flexbox}>
+    <div className={classes.cardGroup}>
       <div>
         <h3>{title1}</h3>
         <pre>{text1}</pre>

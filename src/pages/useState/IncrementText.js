@@ -2,8 +2,7 @@ import React from "react";
 
 export default function IncrementText() {
   const title1 = "IncrementCase.js";
-  const text1 = String.raw`
-export default function IncrementCase() {
+  const text1 = String.raw`export default function IncrementCase() {
   const [count, setCount] = useState(4);
   const [action, setAction] = useState("Click to start");
 

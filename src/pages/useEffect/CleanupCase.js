@@ -2,27 +2,27 @@ import { useState, useEffect } from "react";
 import classes from "../../layout/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
-import ResourceText from "./ResourceText";
+import CleanupText from "./CleanupText";
 
-export default function ResourceCase() {
+export default function CleanupCase() {
   const [resourceType, setResourceType] = useState("Posts");
-  const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
-      .then((response) => response.json())
-      .then((json) => setItems(json));
+    console.log(resourceType, " triggered");
+    return () => {
+      console.log(resourceType, " return");
+    };
   }, [resourceType]);
 
   return (
     <section>
       <div className={classes.niceFlow}>
-        <h2>Resource Types</h2>
+        <h2>Return Cleanup Timing</h2>
         <div className={classes.insertNote}>
           <p>
-            The side effect of changing state of the resource type is fetching
-            item list correspond to the type and isplayed in the screen. This
-            one doesn't require return clean up.
+            This is to illustrate that the return of the previous side effect is
+            not run until the next side effect is triggered. Open console to see
+            the timing.
           </p>
         </div>
         <div className={classes.cardItem}>
@@ -37,14 +37,9 @@ export default function ResourceCase() {
           <div>
             <b>{resourceType}</b>
           </div>
-          <div className={classes.overflowBox}>
-            {items.map((item) => {
-              return <pre>{JSON.stringify(item)}</pre>;
-            })}
-          </div>
         </div>
         <ShowHideProvider>
-          <ShowHideButton textFile=<ResourceText /> />
+          <ShowHideButton textFile=<CleanupText /> />
         </ShowHideProvider>
       </div>
     </section>
