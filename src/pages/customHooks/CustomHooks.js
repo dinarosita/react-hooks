@@ -40,7 +40,7 @@ export default function CustomHooksPage() {
 
       <section className={classes.hookbox}>
         <h2>useLocalStorage: Input Persistence</h2>
-        <div className={classes.flexbox}>
+        <div className={classes.cardGroup}>
           <div>
             <h3>Regular input box</h3>
             <InputRegular />

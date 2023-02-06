@@ -17,7 +17,7 @@ function MainNavigation() {
             <Link to="/react-hooks/useeffect">useEffect</Link>
           </li>
           <li>
-            <Link to="/react-hooks/usememo">useMemo (slowload)</Link>
+            <Link to="/react-hooks/usememo">useMemo &#10710;</Link>
           </li>
           <li>
             <Link to="/react-hooks/useref">useRef</Link>
@@ -32,13 +32,13 @@ function MainNavigation() {
             <Link to="/react-hooks/usecallback">useCallback</Link>
           </li>
           <li>
-            <Link to="/react-hooks/uselayouteffectpage">useLayoutEffect</Link>
+            <Link to="/react-hooks/uselayouteffect">useLayoutEffect &#10710;</Link>
           </li>
           <li>
             <Link to="/react-hooks/usetransition">useTransition</Link>
           </li>
           <li>
-            <Link to="/react-hooks/usedeferredvalue">useDeferredValue</Link>
+            <Link to="/react-hooks/usedeferredvalue">useDeferredValue &#10710;</Link>
           </li>
           <li>
             <Link to="/react-hooks/customhooks">Custom Hooks</Link>

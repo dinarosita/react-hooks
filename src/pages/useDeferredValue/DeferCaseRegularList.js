@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-export default function RegularList({ input, size }) {
+export default function DeferCaseRegularList({ input, size }) {
   const l = [];
 
   for (let i = 0; i < size; i++) {

@@ -26,7 +26,7 @@ function UseTransitionPage() {
         <h2>Updating long list</h2>
         
 
-        <div className={classes.flexbox}>
+        <div className={classes.cardGroup}>
           <div>
             <h3>Sluggish design without useTransition</h3>
             <SluggishForm />

@@ -1,6 +1,5 @@
 import React from "react";
-import classes from "../../../layout/Page.module.css";
-
+import classes from "../../layout/Global.module.css"
 function SimplifyFunctionText() {
   const title1 = "Before"
   const title1a = "PrethemeApp.js";
@@ -127,7 +126,7 @@ function FunctionConsumer() {
 export default FunctionConsumer;
 `;
   return (
-    <div className={classes.flexbox}>
+    <div className={classes.cardGroup}>
         
       <div>
       <h3>{title1}</h3>

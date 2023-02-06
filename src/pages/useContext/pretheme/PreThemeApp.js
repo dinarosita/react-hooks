@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import PreFunctionConsumer from "./PreFunctionConsumer";
 import PreClassConsumer from "./PreClassConsumer";
-import classes from "../../../layout/Page.module.css";
-
+import classes from "../../layout/Global.module.css"
 export const PreThemeContext = React.createContext();
 
 function PreThemeApp() {
@@ -15,7 +14,7 @@ function PreThemeApp() {
   return (
     <PreThemeContext.Provider value={darkTheme}>
       <button onClick={toggleTheme}>Toggle Theme</button>
-      <div className={classes.flexbox}>
+      <div className={classes.cardGroup}>
         <PreFunctionConsumer />
         <PreClassConsumer />
       </div>

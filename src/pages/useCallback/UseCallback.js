@@ -18,7 +18,7 @@ export default function useCallbackPage() {
 
       <div className={classes.hookbox}>
         <h2>Get Items</h2>
-        <div className={classes.flexbox}>
+        <div className={classes.cardGroup}>
           <div>
             <GetItemsWithoutCallback />
           </div>

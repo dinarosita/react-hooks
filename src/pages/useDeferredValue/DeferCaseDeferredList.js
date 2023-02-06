@@ -1,6 +1,6 @@
 import React, { useDeferredValue, useEffect } from "react";
 
-export default function DeferredList({ input, size }) {
+export default function DeferCaseDeferredList({ input, size }) {
   const deferredInput = useDeferredValue(input);
   const l = [];
 

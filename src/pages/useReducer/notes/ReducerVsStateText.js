@@ -1,6 +1,5 @@
 import React from "react";
-import classes from "../../../layout/Page.module.css";
-
+import classes from "../../layout/Global.module.css"
 function ReducerVsStateText() {
   const title1 = "Using useReducer";
   const text1 = String.raw`
@@ -70,7 +69,7 @@ export default CountAppUsestate;
 `;
 
   return (
-    <div className={classes.flexbox}>
+    <div className={classes.cardGroup}>
       <div>
         <h3>{title1}</h3>
         <pre>{text1}</pre>

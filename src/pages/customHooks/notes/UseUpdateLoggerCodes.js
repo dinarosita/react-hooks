@@ -1,6 +1,5 @@
 import React from "react";
-import classes from "../../../layout/Page.module.css";
-
+import classes from "../../layout/Global.module.css"
 export default function UseUpdateLoggerCodes() {
   const title1 = "MainApp.js";
   const text1 = String.raw`
@@ -50,7 +49,7 @@ function useUpdateLogMine(key, value) {
 ...
 `;
   return (
-    <div className={classes.flexbox}>
+    <div className={classes.cardGroup}>
       <div>
         <h3>useUpdateLogger</h3>
         <p>Without key</p>

@@ -1,6 +1,5 @@
 import React from "react";
-import classes from "../../../layout/Page.module.css";
-
+import classes from "../../layout/Global.module.css"
 export default function UseLocalStorageCodes() {
   const title1 = "MainApp.js useState";
   const text1 = String.raw`
@@ -81,7 +80,7 @@ export default function useLocalStorage(key, initialValue) {
 }`;
 
   return (
-    <div className={classes.flexbox}>
+    <div className={classes.cardGroup}>
       <div>
         <h3>{title1}</h3>
         <pre>{text1}</pre>

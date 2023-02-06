@@ -4,13 +4,13 @@ import Layout from "./layout/Layout.js";
 import UseStatePage from "./pages/useState/UseStatePage";
 import UseMemoPage from "./pages/useMemo/UseMemoPage";
 import UseRefPage from "./pages/useRef/UseRefPage";
-import UseContextPage from "./pages/useContext/UseContext";
-import UseReducerPage from "./pages/useReducer/UseReducer";
-import UseCallbackPage from "./pages/useCallback/UseCallback";
-import CustomHooksPage from "./pages/customHooks/CustomHooks";
+// import UseContextPage from "./pages/useContext/UseContext";
+// import UseReducerPage from "./pages/useReducer/UseReducer";
+// import UseCallbackPage from "./pages/useCallback/UseCallback";
+// import CustomHooksPage from "./pages/customHooks/CustomHooks";
 import UseLayoutEffectPage from "./pages/useLayoutEffect/UseLayoutEffectPage";
 import UseTransitionPage from "./pages/useTransition/UseTransitionPage";
-import UseDeferredValuePage from "./pages/useDeferredValue/UseDeferredValue.js";
+import UseDeferredValuePage from "./pages/useDeferredValue/UseDeferredValuePage";
 import Home from "./pages/Home.js";
 import UseEffectPage from "./pages/useEffect/UseEffectPage.js";
 
@@ -34,18 +34,18 @@ function App() {
                 <UseRefPage />
             </Route>
             <Route path="/react-hooks/usecontext">
-                <UseContextPage />
+                {/* <UseContextPage /> */}
             </Route>
             <Route path="/react-hooks/usereducer">
-                <UseReducerPage />
+                {/* <UseReducerPage /> */}
             </Route>
             <Route path="/react-hooks/usecallback">
-                <UseCallbackPage />
+                {/* <UseCallbackPage /> */}
             </Route>
             <Route path="/react-hooks/customhooks">
-                <CustomHooksPage />
+                {/* <CustomHooksPage /> */}
             </Route>
-            <Route path="/react-hooks/uselayouteffectpage">
+            <Route path="/react-hooks/uselayouteffect">
                 <UseLayoutEffectPage />
             </Route>
             <Route path="/react-hooks/usetransition">

@@ -23,7 +23,7 @@ export default function UseReducerPage() {
 
       <div className={classes.hookbox}>
         <h2>To Do List</h2>
-        <div className={classes.flexbox}>
+        <div className={classes.cardGroup}>
           <div>
             <h3>Todo App</h3>
             <TodoApp />
@@ -31,7 +31,7 @@ export default function UseReducerPage() {
         </div>
         <div className={classes.spacer} />
         <h3>Make my own</h3>
-        <div className={classes.flexbox}>
+        <div className={classes.cardGroup}>
           <div>
             <MyTodoApp />
           </div>
@@ -44,7 +44,7 @@ export default function UseReducerPage() {
       <div className={classes.hookbox}>
         <h2>Increment & Decrement</h2>
 
-        <div className={classes.flexbox}>
+        <div className={classes.cardGroup}>
           <div>
             <h3>Using useReducer</h3>
             <CountApp />
@@ -61,7 +61,7 @@ export default function UseReducerPage() {
 
         <div className={classes.spacer} />
         <h3>Make my own</h3>
-        <div className={classes.flexbox}>
+        <div className={classes.cardGroup}>
           <div>
             <MyCount2App />
           </div>

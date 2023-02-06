@@ -1,6 +1,6 @@
 import React from "react";
 import UseCallbackCodes from "./UseCallbackCodes";
-import classes from "../../../layout/Page.module.css";
+import classes from "../../../layout/Global.module.css"
 import { useDisplay, useDisplayUpdate } from "../../../tools/ToggleContext";
 
 export default function UseCallbackNote() {
@@ -96,7 +96,7 @@ useEffect((10) => {
         return value as the new value. With useCallback, the variable is set
         with the entire function.
       </p>
-      <div className={classes.flexbox}>
+      <div className={classes.cardGroup}>
         <pre className={classes.codesnippet}>{text1}</pre>
         <pre className={classes.codesnippet}>{text2}</pre>
         <pre className={classes.codesnippet}>{text3}</pre>
@@ -112,7 +112,7 @@ useEffect((10) => {
         </ul>
       </div>
 
-      <div className={classes.flexbox}>
+      <div className={classes.cardGroup}>
         <pre className={classes.codesnippet}>{text5}</pre>
         <pre className={classes.codesnippet}>{text6}</pre>
       </div>
