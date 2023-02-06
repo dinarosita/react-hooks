@@ -2,13 +2,13 @@ import classes from "../../layout/Global.module.css";
 import { useState, useEffect } from "react";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
-import WidthText from "./WidthText";
+import WidthCaseText from "./WidthCaseText";
 
 export default function WidthCase() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleResize = () => {
-    setWindowWidth(window.innerWidth);
+    setWindowWidth(window.innerWidth);  
   };
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function WidthCase() {
   return (
     <section>
       <div className={classes.niceFlow}>
-        <h2>Window width</h2>
+        <h2>Window Width Case</h2>
         <div className={classes.cardItem}>
           <div className={classes.displaySingle}>Window width: {windowWidth}</div>
         </div>
@@ -35,7 +35,7 @@ export default function WidthCase() {
           </p>
         </div>
         <ShowHideProvider>
-          <ShowHideButton textFile=<WidthText /> />
+          <ShowHideButton textFile=<WidthCaseText /> />
         </ShowHideProvider>
       </div>
     </section>

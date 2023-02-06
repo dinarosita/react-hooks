@@ -1,48 +1,25 @@
-import React, { useState, useMemo, useEffect, useRef } from "react";
-import classes from "../../layout/Page.module.css";
+import React from "react";
+import classes from "../../layout/Global.module.css";
+import ShowHideButton from "../../tools/ShowHideButton";
+import { ShowHideProvider } from "../../tools/ToggleContext";
+import ReferenceCasePlain from "./ReferenceCasePlain";
+import ReferenceCaseText from "./ReferenceCaseText";
+import ReferenceCaseUseMemo from "./ReferenceCaseUseMemo";
 
-function ReferenceCase() {
-  const [number, setNumber] = useState(0);
-  const [dark, setDark] = useState(false);
-
-  const doubleNumber = useMemo(() => {
-    return slowFunction(number);
-  }, [number]);
-
-  const themeStyles = useMemo(() => {
-    return {
-      backgroundColor: dark ? "cadetblue" : "white",
-      color: dark ? "white" : "cadetblue",      
-    };
-  }, [dark]);
-
-  const renderCount = useRef(1)
-
-  useEffect(() => {
-    console.log("theme changed");
-    renderCount.current = renderCount.current + 1;
-  }, [themeStyles]);
+export default function ReferenceCase() {
   return (
-    <div style={themeStyles}>
-      <h3>With useMemo</h3>
+    <section>
+      <div className={classes.niceFlow}>
+        <h2>Reference Case</h2>
+        <div className={classes.cardGroup}>
+          <ReferenceCasePlain />
+          <ReferenceCaseUseMemo />
+        </div>
 
-      <input
-        type="number"
-        value={number}
-        onChange={(e) => setNumber(parseInt(e.target.value))}
-      />
-      <button onClick={() => setDark((prevDark) => !prevDark)}>
-        Change Theme
-      </button>
-      <div className={classes.displaySinglebox}>Doubled: {doubleNumber}</div>
-      <p>Theme render count: {renderCount.current}</p>
-    </div>
+        <ShowHideProvider>
+          <ShowHideButton textFile=<ReferenceCaseText /> />
+        </ShowHideProvider>
+      </div>
+    </section>
   );
 }
-
-function slowFunction(num) {
-  console.log("Calling slow function");
-  for (let i = 0; i <= 1000000000; i++) {}
-  return num * 2;
-}
-export default ReferenceCase;

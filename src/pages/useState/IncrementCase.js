@@ -2,7 +2,7 @@ import { useState } from "react";
 import classes from "../../layout/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
-import IncrementText from "./IncrementText";
+import IncrementCaseText from "./IncrementCaseText";
 
 export default function IncrementCase() {
   const [count, setCount] = useState(4);
@@ -20,7 +20,7 @@ export default function IncrementCase() {
   return (
     <section>
       <div className={classes.niceFlow}>
-        <h2>Increment</h2>
+        <h2>Increment Case</h2>
         <div className={classes.cardItem}>
           <div className={classes.displayMulti}>
             <button onClick={decrementCount}>-</button> <span>{count}</span>{" "}
@@ -29,7 +29,7 @@ export default function IncrementCase() {
           <div>Action: {action}</div>
         </div>
         <ShowHideProvider>
-          <ShowHideButton textFile=<IncrementText /> />
+          <ShowHideButton textFile=<IncrementCaseText /> />
         </ShowHideProvider>
       </div>
     </section>

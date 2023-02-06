@@ -2,21 +2,21 @@ import React from "react";
 import classes from "../../layout/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
-import PopupText from "./PopupText";
-import PopupEffect from "./PopupEffect";
-import PopupLayoutEffect from "./PopupLayoutEffect";
-import PopupWithoutEffect from "./PopupWithoutEffect";
+import PopupCaseText from "./PopupCaseText";
+import PopupCaseEffect from "./PopupCaseEffect";
+import PopupCaseLayoutEffect from "./PopupCaseLayoutEffect";
+import PopupCaseWithoutEffect from "./PopupCaseWithoutEffect";
 
 export default function PopupCase() {
   return (
     <section>
       <div className={classes.niceFlow}>
-        <h2>Popup Layout</h2>
+        <h2>Popup Layout Case</h2>
         <React.StrictMode>
           <div className={classes.cardGroup}>
-            <PopupEffect />
-            <PopupLayoutEffect />
-            <PopupWithoutEffect />
+            <PopupCaseEffect />
+            <PopupCaseLayoutEffect />
+            <PopupCaseWithoutEffect />
           </div>
           
         </React.StrictMode>
@@ -28,7 +28,7 @@ export default function PopupCase() {
           </p>
         </div>
         <ShowHideProvider>
-          <ShowHideButton textFile=<PopupText /> />
+          <ShowHideButton textFile=<PopupCaseText /> />
         </ShowHideProvider>
       </div>
     </section>

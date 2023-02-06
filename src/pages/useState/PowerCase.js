@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
 import classes from "../../layout/Global.module.css";
-import PowerText from "./PowerText";
+import PowerCaseText from "./PowerCaseText";
 
 export default function PowerCase() {
   const [power, setPower] = useState(2);
@@ -26,7 +26,7 @@ export default function PowerCase() {
   return (
     <section>
       <div className={classes.niceFlow}>
-        <h2>Power</h2>
+        <h2>Power Case</h2>
         <div className={classes.cardItem}>
           <div className={classes.displayMulti}>
             <button onClick={startPower}>Start over</button>{" "}
@@ -37,7 +37,7 @@ export default function PowerCase() {
           <div>Action: {label}</div>
         </div>
         <ShowHideProvider>
-          <ShowHideButton textFile=<PowerText /> />
+          <ShowHideButton textFile=<PowerCaseText /> />
         </ShowHideProvider>
       </div>
     </section>

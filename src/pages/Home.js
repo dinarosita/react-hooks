@@ -1,15 +1,21 @@
 import React from 'react'
-import UseEffectAbout from './useEffect/UseEffectAbout'
-import UseStateAbout from './useState/UseStateAbout'
-import UseLayoutEffectAbout from './useLayoutEffect/UseLayoutEffectAbout'
+import UseEffectPageAbout from './useEffect/UseEffectPageAbout'
+import UseStatePageAbout from './useState/UseStatePageAbout'
+import UseLayoutEffectPageAbout from './useLayoutEffect/UseLayoutEffectPageAbout'
+import UseMemoPageAbout from './useMemo/UseMemoPageAbout'
+import UseRefPageAbout from './useRef/UseRefPageAbout'
+import UseTransitionPageAbout from './useTransition/UseTransitionPageAbout'
 
 
 export default function Home() {
   return (
     <main>
-      <UseStateAbout />
-      <UseEffectAbout />
-      <UseLayoutEffectAbout />
+      <UseStatePageAbout />
+      <UseEffectPageAbout />
+      <UseMemoPageAbout />
+      <UseRefPageAbout />
+      <UseLayoutEffectPageAbout />
+      <UseTransitionPageAbout />
     </main>
   )
 }

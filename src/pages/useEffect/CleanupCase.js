@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import classes from "../../layout/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
-import CleanupText from "./CleanupText";
+import CleanupCaseText from "./CleanupCaseText";
 
 export default function CleanupCase() {
   const [resourceType, setResourceType] = useState("Posts");
@@ -39,7 +39,7 @@ export default function CleanupCase() {
           </div>
         </div>
         <ShowHideProvider>
-          <ShowHideButton textFile=<CleanupText /> />
+          <ShowHideButton textFile=<CleanupCaseText /> />
         </ShowHideProvider>
       </div>
     </section>

@@ -2,18 +2,18 @@ import React from "react";
 import classes from "../../layout/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
-import CounterEffect from "./CounterEffect";
-import CounterLayoutEffect from "./CounterLayoutEffect";
-import CounterText from "./CounterText";
+import CounterCaseEffect from "./CounterCaseEffect";
+import CounterCaseLayoutEffect from "./CounterCaseLayoutEffect";
+import CounterCaseText from "./CounterCaseText";
 
 export default function CounterCase() {
   return (
     <section>
       <div className={classes.niceFlow}>
-        <h2>Counter</h2>
+        <h2>Counter Case</h2>
         <div className={classes.cardGroup}>
-          <CounterEffect />
-          <CounterLayoutEffect />
+          <CounterCaseEffect />
+          <CounterCaseLayoutEffect />
         </div>
         <div className={classes.insertNote}>
           <p>
@@ -25,7 +25,7 @@ export default function CounterCase() {
           </p>
         </div>
         <ShowHideProvider>
-          <ShowHideButton textFile=<CounterText /> />
+          <ShowHideButton textFile=<CounterCaseText /> />
         </ShowHideProvider>
       </div>
     </section>

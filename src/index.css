@@ -25,6 +25,11 @@ pre {
   font-family: "Courier New", monospace;
 }
 
+code {
+    font-size: .95rem;
+    color: cadetblue
+}
+
 button {
   border: 1px solid steelblue;
   background-color: cadetblue;
@@ -68,4 +73,17 @@ h3 {
 
 h4 {
   font-size: medium;
+}
+
+dt {
+    font-weight: bold;
+    color: cadetblue;
+}
+
+dd {
+    margin-left: 0;
+}
+
+dd + dt {
+    margin-top: 1rem;
 }

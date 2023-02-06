@@ -2,14 +2,14 @@ import { Route, Switch} from "react-router-dom";
 
 import Layout from "./layout/Layout.js";
 import UseStatePage from "./pages/useState/UseStatePage";
-import UseMemoPage from "./pages/useMemo/UseMemo";
-import UseRefPage from "./pages/useRef/UseRef";
+import UseMemoPage from "./pages/useMemo/UseMemoPage";
+import UseRefPage from "./pages/useRef/UseRefPage";
 import UseContextPage from "./pages/useContext/UseContext";
 import UseReducerPage from "./pages/useReducer/UseReducer";
 import UseCallbackPage from "./pages/useCallback/UseCallback";
 import CustomHooksPage from "./pages/customHooks/CustomHooks";
 import UseLayoutEffectPage from "./pages/useLayoutEffect/UseLayoutEffectPage";
-import UseTransitionPage from "./pages/useTransition/UseTransition.js";
+import UseTransitionPage from "./pages/useTransition/UseTransitionPage";
 import UseDeferredValuePage from "./pages/useDeferredValue/UseDeferredValue.js";
 import Home from "./pages/Home.js";
 import UseEffectPage from "./pages/useEffect/UseEffectPage.js";

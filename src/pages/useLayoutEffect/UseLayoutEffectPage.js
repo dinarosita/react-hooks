@@ -1,13 +1,13 @@
 
 import React from "react";
-import UseLayoutEffectAbout from "./UseLayoutEffectAbout"
+import UseLayoutEffectPageAbout from "./UseLayoutEffectPageAbout"
 import PopupCase from "./PopupCase";
 import CounterCase from "./CounterCase";
 
 export default function UseLayoutEffectPage() {
   return (
     <main>
-      <UseLayoutEffectAbout />
+      <UseLayoutEffectPageAbout />
       <PopupCase />
       <CounterCase />
     </main>

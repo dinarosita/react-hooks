@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import classes from "../../layout/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
-import ResourceText from "./ResourceText";
+import ResourceCaseText from "./ResourceCaseText";
 
 export default function ResourceCase() {
   const [resourceType, setResourceType] = useState("Posts");
@@ -17,7 +17,7 @@ export default function ResourceCase() {
   return (
     <section>
       <div className={classes.niceFlow}>
-        <h2>Resource Types</h2>
+        <h2>Resource Types Case</h2>
         <div className={classes.insertNote}>
           <p>
             The side effect of changing state of the resource type is fetching
@@ -44,7 +44,7 @@ export default function ResourceCase() {
           </div>
         </div>
         <ShowHideProvider>
-          <ShowHideButton textFile=<ResourceText /> />
+          <ShowHideButton textFile=<ResourceCaseText /> />
         </ShowHideProvider>
       </div>
     </section>
