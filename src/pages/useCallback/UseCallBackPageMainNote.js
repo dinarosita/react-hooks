@@ -17,25 +17,25 @@ export default function UseCallbackPageMainNote() {
         <span className={classes.variable}>callbackFunction</span>,{" "}
         <span className={classes.variable}>[dependencies]</span>)
       </pre>
-
       <dl className={classes.dlMain}>
-        <dt>2 situations to use useCallback:</dt>
+        <dt>
+          Consider <code>useMemo</code> first
+        </dt>
         <dd>
-          <ul>
-            <li>The function takes extra parameter (like in below example)</li>
-            <li>
-              For the purpose of creating new functions, but we might not
-              encounter this.
-            </li>
-          </ul>
+          In practise, this hook is rarely needed. Usually it's the final value
+          we want to remember. So typically <code>useMemo</code> is what we
+          need. But occassionally, we need to cache the whole function, not just
+          the final value. For example, when the function takes extra parameter,
+          like in the example below. Only <code>useCallback</code> can do this,{" "}
+          <code>useMemo</code>can't. However this is a very rare occurence. In
+          most cases what we worry about is referential equality, and it's{" "}
+          <code>useMemo</code>'s job.
         </dd>
-
-        <dt>Rarely used: Consider useMemo first</dt>
+        <dt>Generating new functions</dt>
         <dd>
-          In most cases, what we worry of is referential equality. We want the
-          function to not rerender if the dependencies don't change. And in that
-          case, the return value will be the same. Hook useMemo is already
-          intended for this purpose.
+          Another reason useCallback is if we actually need to create new
+          function depending on the parameters. However this is probably not
+          something we will encounter.
         </dd>
       </dl>
     </div>
