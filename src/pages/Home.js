@@ -5,6 +5,8 @@ import UseLayoutEffectPageAbout from './useLayoutEffect/UseLayoutEffectPageAbout
 import UseMemoPageAbout from './useMemo/UseMemoPageAbout'
 import UseRefPageAbout from './useRef/UseRefPageAbout'
 import UseTransitionPageAbout from './useTransition/UseTransitionPageAbout'
+import UseDeferredValuePageAbout from './useDeferredValue/UseDeferredValuePageAbout'
+import UseCallbackPageAbout from './useCallback/UseCallbackPageAbout'
 
 
 export default function Home() {
@@ -16,6 +18,8 @@ export default function Home() {
       <UseRefPageAbout />
       <UseLayoutEffectPageAbout />
       <UseTransitionPageAbout />
+      <UseDeferredValuePageAbout />
+      <UseCallbackPageAbout />
     </main>
   )
 }

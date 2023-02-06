@@ -80,10 +80,23 @@ dt {
     color: cadetblue;
 }
 
-dd {
-    margin-left: 0;
-}
-
 dd + dt {
     margin-top: 1rem;
+}
+
+dd > ul:first-child {
+    margin-top: .5rem;
+    padding-left: 1.2rem
+}
+
+dl dl {
+    margin-left: 1rem;
+}
+
+p + ul {
+    margin-top: -.8rem;
+}
+
+strong {
+    color: cadetblue;
 }

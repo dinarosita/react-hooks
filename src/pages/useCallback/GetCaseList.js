@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-export default function ListExtraParam({ getItems }) {
+export default function GetCaseList({ getItems }) {
   const [items, setItems] = useState([]);
+
   useEffect(() => {
     setItems(getItems(10));
     console.log("Updating Items");
   }, [getItems]);
+
   return (
     <div>
       <p>Number List:</p>

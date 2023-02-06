@@ -18,7 +18,7 @@ export default function UseMemoPageMainNote() {
         <span className={classes.variable}>[dependencies]</span>)
       </pre>
 
-      <dl>
+      <dl className={classes.dlMain}>
         <dt>Slow function</dt>
         <dd>
           Use useMemo in slow functions because their unnecesarry rendering

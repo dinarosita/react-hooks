@@ -1,7 +1,6 @@
 import React, { useDeferredValue, useEffect, useState } from "react";
 import classes from "../../layout/Global.module.css";
 
-
 export default function DeferCaseOneFile({ size }) {
   const [input, setInput] = useState("");
   const deferredInput = useDeferredValue(input);

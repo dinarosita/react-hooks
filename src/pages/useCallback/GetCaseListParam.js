@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-export default function List({ getItems }) {
+export default function GetCaseListParam({ getItems }) {
   const [items, setItems] = useState([]);
   useEffect(() => {
-    setItems(getItems());
+    setItems(getItems(10));
     console.log("Updating Items");
   }, [getItems]);
   return (

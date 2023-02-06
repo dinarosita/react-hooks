@@ -1,12 +1,11 @@
 import React from "react";
 import classes from "../../layout/Global.module.css"
-export default function UseCallbackCodes() {
-  const title1 = "App.js without useCallback";
-  const text1 = String.raw`
-import React, { useState } from "react";
-import List from "./List.js";
 
-export default function App() {
+export default function GetCaseText() {
+  const title1 = "App.js plain";
+  const text1 = String.raw`import GetCaseList from "./GetCaseList.js";
+
+export default function GetCasePlain() {
   const [number, setNumber] = useState(1);
   const [dark, setDark] = useState(false);
 
@@ -15,8 +14,8 @@ export default function App() {
   };
 
   const theme = {
-    backgroundColor: dark ? "slategray" : "white",
-    color: dark ? "white" : "slategray",
+    backgroundColor: dark ? "mistyrose" : "white",
+    color: dark ? "indianred" : "slategray",
   };
 
   return (
@@ -26,21 +25,19 @@ export default function App() {
         value={number}
         onChange={(e) => setNumber(parseInt(e.target.value))}
       />
-      <List getItems={getItems} />
+
+      <GetCaseList getItems={getItems} />
       <button onClick={() => setDark((prevDark) => !prevDark)}>
         Toggle theme
       </button>
     </div>
   );
-}
-`;
+}`;
 
-    const title2 = "App.js with useCallback";
-    const text2 = String.raw`
-import React, { useState, useCallback } from "react";
-import List from "./List.js";
+    const title2 = "App.js useCallback";
+    const text2 = String.raw`import GetCaseList from "./GetCaseList.js";
 
-export default function App() {
+export default function GetCaseUseCallback() {
   const [number, setNumber] = useState(1);
   const [dark, setDark] = useState(false);
 
@@ -49,8 +46,8 @@ export default function App() {
   }, [number]);
 
   const theme = {
-    backgroundColor: dark ? "slategray" : "white",
-    color: dark ? "white" : "slategray",
+    backgroundColor: dark ? "mistyrose" : "white",
+    color: dark ? "indianred" : "slategray",
   };
 
   return (
@@ -60,27 +57,24 @@ export default function App() {
         value={number}
         onChange={(e) => setNumber(parseInt(e.target.value))}
       />
-      <List getItems={getItems} />
+
+      <GetCaseList getItems={getItems} />
       <button onClick={() => setDark((prevDark) => !prevDark)}>
         Toggle theme
       </button>
     </div>
   );
-}
-`;
+}`;
 
   const title3 = "List.js";
-  const text3 = String.raw`
-import React, { useState, useEffect } from "react";
-
-export default function List({ getItems }) {
+  const text3 = String.raw`export default function GetCaseList({ getItems }) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
     setItems(getItems());
     console.log("Updating Items");
   }, [getItems]);
-  
+
   return (
     <div>
       <p>Number List:</p>

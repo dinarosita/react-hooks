@@ -10,23 +10,31 @@ export default function UseTransitionPageMainNote() {
         the higher priority one doesn't need to wait the lower priority one. It
         will render them separately.
       </p>
-      <pre className={classes.formula}>const [<span className={classes.variable}>isPending</span>, <span className={classes.variable}>startTransition</span>] = <span className={classes.thehook}>useTransition</span>()</pre>
-      <p>Returns 2 values:</p>
-        <ul>
-          <li>
-            1st value <b>isPending</b>: What to do/display instead in the case
-            of calculation not ready yet
-          </li>
-          <li>
-            2nd value <b>startTransition</b>: To wrap the low priority
-            procedure.
-          </li>
-        </ul>
-        <p>
+      <pre className={classes.formula}>
+        const [<span className={classes.variable}>isPending</span>,{" "}
+        <span className={classes.variable}>startTransition</span>] ={" "}
+        <span className={classes.thehook}>useTransition</span>()
+      </pre>
+      <dl className={classes.dlMain}>
+        <dt>Returns 2 values</dt>
+        <dd>
+          <ul>
+            <li>
+              <strong>isPending</strong>: What to do/display instead in the case of
+              calculation not ready yet
+            </li>
+            <li>
+              <strong>startTransition</strong>: To wrap the low priority procedure.
+            </li>
+          </ul>
+        </dd>
+        <dt>Usage</dt>
+        <dd>
           Only use this hook when it's absolutely needed, because this hook
           cause much more rendering than normal. Can unnecesarrily burdening if
           not actually needed.
-        </p>
+        </dd>
+      </dl> 
     </div>
   );
 }

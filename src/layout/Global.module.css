@@ -45,27 +45,74 @@
   font-size: 0.9rem;
 }
 
-.formula .variable {
+.variable {
   color: cadetblue;
 }
 
-.formula .thehook {
+.thehook {
   color: indianred;
 }
 
-.formula .codeblock {
+.codeblock {
   color: steelblue;
   font-weight: normal;
+}
+
+.attention {
+    color: lightcoral;
+    font-weight: bold;
+}
+
+.codesnippet {
+  border: 2px solid rgb(240, 199, 199);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0.5rem 0.5rem 0.4rem;
+  font-size: 0.9rem;
+}
+
+dd > .codesnippet {
+  margin-top: 0.5rem;
+  margin-left: -0.5rem;
+}
+
+.dlMain > dd {
+  margin-left: 0;
+}
+
+.dlMain > dd + dd {
+  margin-top: 1rem;
+}
+
+.dlTabCompact {
+    margin-left: 1.5rem;
+}
+
+.dlTabCompact > dt,
+.dlTabCompact > dd {
+    margin: 0;
+}
+
+.dlTabCompact > dd + dt {
+    margin-top: .5rem;
+}
+
+.dlTabCompact pre {
+    margin: .2rem 0 .2rem -.2rem
+}
+
+h3 + .dlTabCompact {
+    margin-top: -.7rem;
 }
 
 .cardGroup {
   display: flex;
   flex-direction: row;
-  gap: 1rem;  
+  gap: 1rem;
 }
 
 .cardGroup > * {
-    flex: 1
+  flex: 1;
 }
 
 .cardItem {
