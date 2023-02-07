@@ -41,7 +41,7 @@ function MainNavigation() {
             <Link to="/react-hooks/usedeferredvalue">useDeferredValue &#10710;</Link>
           </li>
           <li>
-            <Link to="/react-hooks/customhooks">Custom Hooks</Link>
+            <Link to="/react-hooks/customhook">Custom Hook</Link>
           </li>
         </ul>
       </nav>

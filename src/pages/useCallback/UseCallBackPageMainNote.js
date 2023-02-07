@@ -13,9 +13,9 @@ export default function UseCallbackPageMainNote() {
 
       <pre className={classes.formula}>
         const <span className={classes.variable}>callbackVal</span> ={" "}
-        <span className={classes.thehook}>useCallback</span>(
-        <span className={classes.variable}>callbackFunction</span>,{" "}
-        <span className={classes.variable}>[dependencies]</span>)
+        <span className={classes.thehook}>useCallback(
+        <span className={classes.func}>callbackFunction</span>,{" "}
+        <span className={classes.depend}>[dependencies]</span>)</span>
       </pre>
       <dl className={classes.dlMain}>
         <dt>

@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import { PreThemeContext } from "./PreThemeApp";
+import { CompareCaseThemeContext } from "./CompareCaseApp";
 
-class PreClassConsumer extends Component {
+export default class CompareCaseClassConsumer extends Component {
   themeStyles(dark) {
     return {
       backgroundColor: dark ? "gray" : "white",
       color: dark ? "white" : "gray",
       padding: "1.5rem",
-      margin: ".5rem",
       border: "2px solid gray",
       borderRadius: ".5rem",
       fontWeight: "bold",
@@ -16,15 +15,11 @@ class PreClassConsumer extends Component {
 
   render() {
     return (
-      <PreThemeContext.Consumer>
+      <CompareCaseThemeContext.Consumer>
         {(theme) => {
-          return (
-            <div style={this.themeStyles(theme)}>Pre Class Consumer</div>
-          );
+          return <div style={this.themeStyles(theme)}>Class Consumer</div>;
         }}
-      </PreThemeContext.Consumer>
+      </CompareCaseThemeContext.Consumer>
     );
   }
 }
-
-export default PreClassConsumer;

@@ -1,4 +1,5 @@
 import React, { useReducer } from "react";
+import classes from "../../../layout/Global.module.css";
 
 const ACTIONS = {
   INCREMENT: "increment",
@@ -16,7 +17,7 @@ function reducer(state, action) {
   }
 }
 
-function CountApp() {
+export default function CountApp() {
   const [state, dispatch] = useReducer(reducer, { count: 0 });
 
   function increment() {
@@ -28,11 +29,15 @@ function CountApp() {
   }
 
   return (
-    <div>
-      <button onClick={decrement}>-</button> {state.count}{" "}
-      <button onClick={increment}>+</button>
+    <div className={classes.cardItem}>
+      <div className={classes.niceFlow}>
+        <h3>Count App</h3>
+        <div className={classes.displayMulti}>
+          <button onClick={decrement}>-</button>
+          <div>{state.count}</div>
+          <button onClick={increment}>+</button>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default CountApp;

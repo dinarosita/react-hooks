@@ -7,7 +7,7 @@ export default function MyTodo2({ todo, dispatch }) {
       <div style={{ color: todo.complete ? "lightblue" : "slategray" }}>
         {todo.task}
       </div>
-      <div>
+      <div className={classes.displayMulti}>
         <button
           onClick={() => {
             dispatch({ type: ACTIONS.TOGGLE_TODO, payload: { id: todo.id } });

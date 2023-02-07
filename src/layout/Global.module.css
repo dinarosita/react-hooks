@@ -43,27 +43,47 @@
   padding: 0.8rem 0.8rem 0.6rem;
   font-weight: bold;
   font-size: 0.9rem;
-}
-
-.variable {
-  color: cadetblue;
+  line-height: 1.2rem;
 }
 
 .thehook {
   color: indianred;
 }
 
+.func {
+  color: darksalmon;
+}
+.depend {
+  color: indianred;
+}
+
+.variable {
+  color: cadetblue;
+}
+
+.value {
+  color: cadetblue;
+  font-weight: normal;
+}
+
+.prop {
+    color: rgb(159, 91, 159);
+    font-weight: normal;
+}
+
+.element {
+    color:cornflowerblue
+}
 .codeblock {
   color: steelblue;
   font-weight: normal;
 }
-
 .attention {
-    color: lightcoral;
-    font-weight: bold;
+  color: lightcoral;
+  font-weight: bold;
 }
 
-.codesnippet {
+.codeSnippet {
   border: 2px solid rgb(240, 199, 199);
   border-radius: 10px;
   display: inline-block;
@@ -71,7 +91,7 @@
   font-size: 0.9rem;
 }
 
-dd > .codesnippet {
+dd > .codeSnippet {
   margin-top: 0.5rem;
   margin-left: -0.5rem;
 }
@@ -85,24 +105,24 @@ dd > .codesnippet {
 }
 
 .dlTabCompact {
-    margin-left: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .dlTabCompact > dt,
 .dlTabCompact > dd {
-    margin: 0;
+  margin: 0;
 }
 
 .dlTabCompact > dd + dt {
-    margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .dlTabCompact pre {
-    margin: .2rem 0 .2rem -.2rem
+  margin: 0.2rem 0 0.2rem -0.2rem;
 }
 
 h3 + .dlTabCompact {
-    margin-top: -.7rem;
+  margin-top: -0.7rem;
 }
 
 .cardGroup {

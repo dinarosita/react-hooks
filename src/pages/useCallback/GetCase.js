@@ -51,7 +51,7 @@ export default function GetCase() {
           <dl className={classes.dlTabCompact}>
             <dt>Plain App without hook</dt>
             <dd>
-              <pre className={classes.codesnippet}>
+              <pre className={classes.codeSnippet}>
                 const <span className={classes.variable}>getItems</span> ={" "}
                 <span className={classes.codeblock}>
                   () => {"{"} return [num, num+1, num+2] {"}"}
@@ -61,7 +61,7 @@ export default function GetCase() {
 
             <dt>useCallback App</dt>
             <dd>
-              <pre className={classes.codesnippet}>
+              <pre className={classes.codeSnippet}>
                 const <span className={classes.variable}>getItems</span> ={" "}
                 <span className={classes.thehook}>
                   useCallback(
@@ -75,7 +75,7 @@ export default function GetCase() {
             <dt>Using useMemo will not work</dt>
             <dd>This will not work because useMemo is not for function</dd>
             <dd>
-              <pre className={classes.codesnippet}>
+              <pre className={classes.codeSnippet}>
                 const <span className={classes.variable}>getItems</span> ={" "}
                 <span className={classes.thehook}>
                   useMemo(
@@ -89,7 +89,7 @@ export default function GetCase() {
 
             <dt>List.js</dt>
             <dd>
-              <pre className={classes.codesnippet}>
+              <pre className={classes.codeSnippet}>
                 <span className={classes.thehook}>
                   useEffect(
                   <span className={classes.codeblock}>
@@ -107,7 +107,7 @@ export default function GetCase() {
           <dl className={classes.dlTabCompact}>
             <dt>Plain App</dt>
             <dd>
-              <pre className={classes.codesnippet}>
+              <pre className={classes.codeSnippet}>
                 const <span className={classes.variable}>getItems</span> ={" "}
                 <span className={classes.codeblock}>
                   (<span className={classes.attention}>inc</span>) => {"{"}{" "}
@@ -120,7 +120,7 @@ export default function GetCase() {
 
             <dt>useCallback App</dt>
             <dd>
-              <pre className={classes.codesnippet}>
+              <pre className={classes.codeSnippet}>
                 const <span className={classes.variable}>getItems</span> ={" "}
                 <span className={classes.thehook}>
                   useCallback(
@@ -134,7 +134,7 @@ export default function GetCase() {
 
             <dt>List.js</dt>
             <dd>
-              <pre className={classes.codesnippet}>
+              <pre className={classes.codeSnippet}>
                 <span className={classes.thehook}>
                   useEffect(
                   <span className={classes.codeblock}>

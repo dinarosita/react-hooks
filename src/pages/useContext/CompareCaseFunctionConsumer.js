@@ -1,19 +1,16 @@
 import React, { useContext } from "react";
-import { PreThemeContext } from "./PreThemeApp";
+import { CompareCaseThemeContext } from "./CompareCaseApp";
 
-function PreFunctionConsumer() {
-  const dark = useContext(PreThemeContext);
+export default function CompareCaseFunctionConsumer() {
+  const dark = useContext(CompareCaseThemeContext);
   const themeStyles = {
     backgroundColor: dark ? "gray" : "white",
     color: dark ? "white" : "gray",
     padding: "1.5rem",
-    margin: ".5rem",
     border: "2px solid gray",
     borderRadius: ".5rem",
     fontWeight: "bold",
   };
 
-  return <div style={themeStyles}>Pre Function Consumer</div>;
+  return <div style={themeStyles}>Function Consumer</div>;
 }
-
-export default PreFunctionConsumer;

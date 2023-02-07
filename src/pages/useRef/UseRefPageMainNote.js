@@ -12,8 +12,8 @@ export default function UseRefPageMainNote() {
 
       <pre className={classes.formula}>
         const <span className={classes.variable}>refName</span> ={" "}
-        <span className={classes.thehook}>useRef</span>(
-        <span className={classes.variable}>initialValue</span>)
+        <span className={classes.thehook}>useRef(
+        <span className={classes.value}>initialValue</span>)</span>
       </pre>
 
       <dl className={classes.dlMain}>

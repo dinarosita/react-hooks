@@ -1,11 +1,9 @@
 import React from "react";
-import classes from "../../layout/Global.module.css"
-function ReducerVsStateText() {
-  const title1 = "Using useReducer";
-  const text1 = String.raw`
-import React, { useReducer } from "react";
+import classes from "../../layout/Global.module.css";
 
-const ACTIONS = {
+export default function CountCaseText() {
+  const title1 = "Using useReducer";
+  const text1 = String.raw`const ACTIONS = {
   INCREMENT: "increment",
   DECREMENT: "decrement",
 };
@@ -21,7 +19,7 @@ function reducer(state, action) {
   }
 }
 
-function CountApp() {
+export default function CountApp() {
   const [state, dispatch] = useReducer(reducer, { count: 0 });
 
   function increment() {
@@ -34,19 +32,14 @@ function CountApp() {
 
   return (
     <div>
-      <button onClick={decrement}>-</button> {state.count}{" "}
+      <button onClick={decrement}>-</button>
+      {state.count}
       <button onClick={increment}>+</button>
     </div>
   );
-}
-
-export default CountApp;
-`;
+}`;
   const title2 = "Using useState";
-  const text2 = String.raw`
-import React, { useState } from "react";
-
-function CountAppUsestate() {
+  const text2 = String.raw`export default function CountAppUsestate() {
   const [number, setNumber] = useState(0);
 
   function increment() {
@@ -59,14 +52,12 @@ function CountAppUsestate() {
 
   return (
     <div>
-      <button onClick={decrement}>-</button> {number}{" "}
+      <button onClick={decrement}>-</button>
+      {number}
       <button onClick={increment}>+</button>
     </div>
   );
-}
-
-export default CountAppUsestate;
-`;
+}`;
 
   return (
     <div className={classes.cardGroup}>
@@ -81,5 +72,3 @@ export default CountAppUsestate;
     </div>
   );
 }
-
-export default ReducerVsStateText;

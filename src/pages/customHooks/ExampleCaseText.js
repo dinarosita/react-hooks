@@ -2,11 +2,11 @@ import React from "react";
 import classes from "../../layout/Global.module.css";
 
 export default function ExampleText() {
-  const title1 = "useCallback";
+  const title1 = "useTemplate";
   const text1 = String.raw`text`;
-  const title2 = "useCallback";
+  const title2 = "useTemplate";
   const text2 = String.raw`text`;
-  const title3 = "useCallback";
+  const title3 = "useTemplate";
   const text3 = String.raw`text`;
 
   return (

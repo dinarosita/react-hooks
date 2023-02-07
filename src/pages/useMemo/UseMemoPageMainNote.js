@@ -13,9 +13,9 @@ export default function UseMemoPageMainNote() {
 
       <pre className={classes.formula}>
         const <span className={classes.variable}>memoVal</span> ={" "}
-        <span className={classes.thehook}>useMemo</span>(
-        <span className={classes.variable}>memoFunction</span>,{" "}
-        <span className={classes.variable}>[dependencies]</span>)
+        <span className={classes.thehook}>useMemo(
+        <span className={classes.func}>memoFunction</span>,{" "}
+        <span className={classes.depend}>[dependencies]</span>)</span>
       </pre>
 
       <dl className={classes.dlMain}>

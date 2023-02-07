@@ -12,10 +12,8 @@ export default function UseStatePageMainNote() {
         state value will be used, until setState update it with new value.
       </p>
       <pre className={classes.formula}>
-        const [<span className={classes.variable}>state</span>,{" "}
-        <span className={classes.variable}>setState</span>] ={" "}
-        <span className={classes.thehook}>useState</span>(
-        <span className={classes.variable}>initialState</span>)
+        const [<span className={classes.variable}>state</span>, <span className={classes.func}>setState</span>] = <span className={classes.thehook}>useState(
+        <span className={classes.value}>initialState</span>)</span>
       </pre>
     </div>
   );

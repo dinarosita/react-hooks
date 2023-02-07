@@ -12,7 +12,7 @@ export default function UseDeferredValuePageMainNote() {
         collected until it's handy for react to render together. For using, just
         wrap the wanted state with the hook.
       </p>
-      <pre className={classes.formula}>const <span className={classes.variable}>deferredState</span> = <span className={classes.thehook}>useDeferredValue</span>(<span className={classes.variable}>state</span>)</pre>
+      <pre className={classes.formula}>const <span className={classes.variable}>deferredState</span> = <span className={classes.thehook}>useDeferredValue(<span className={classes.variable}>state</span>)</span></pre>
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function UseTransitionPageMainNote() {
       <pre className={classes.formula}>
         const [<span className={classes.variable}>isPending</span>,{" "}
         <span className={classes.variable}>startTransition</span>] ={" "}
-        <span className={classes.thehook}>useTransition</span>()
+        <span className={classes.thehook}>useTransition()</span>
       </pre>
       <dl className={classes.dlMain}>
         <dt>Returns 2 values</dt>

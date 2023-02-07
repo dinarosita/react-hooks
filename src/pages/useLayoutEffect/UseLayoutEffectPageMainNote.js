@@ -13,12 +13,13 @@ export default function UseLayoutEffectPageMainNote() {
         cause a layout jump especially when it's slow.
       </p>
       <p>
-          This hook can be useful for when the side effect matters for the layout, but could be slow. So only use when it's needed.
-        </p>
-        <pre className={classes.formula}>
-        <span className={classes.thehook}>useLayoutEffect</span>(
-        <span className={classes.variable}>layoutFunction</span>,{" "}
-        <span className={classes.variable}>[dependencies]</span>)
+        This hook can be useful for when the side effect matters for the layout,
+        but could be slow. So only use when it's needed.
+      </p>
+      <pre className={classes.formula}>
+        <span className={classes.thehook}>useLayoutEffect(
+        <span className={classes.func}>layoutFunction</span>,{" "}
+        <span className={classes.depend}>[dependencies]</span>)</span>
       </pre>
     </div>
   );

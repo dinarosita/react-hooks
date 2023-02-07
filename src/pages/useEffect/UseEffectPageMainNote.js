@@ -12,9 +12,9 @@ export default function UseEffectPageMainNote() {
       </p>
 
       <pre className={classes.formula}>
-        <span className={classes.thehook}>useEffect</span>(
-        <span className={classes.variable}>effectFunction</span>,{" "}
-        <span className={classes.variable}>[dependencies]</span>)
+        <span className={classes.thehook}>useEffect(
+        <span className={classes.func}>effectFunction</span>,{" "}
+        <span className={classes.depend}>[dependencies]</span>)</span>
       </pre>
 
       <dl className={classes.dlMain}>

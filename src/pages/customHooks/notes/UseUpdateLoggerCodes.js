@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../layout/Global.module.css"
+import classes from "../../../layout/Global.module.css"
 export default function UseUpdateLoggerCodes() {
   const title1 = "MainApp.js";
   const text1 = String.raw`

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import classes from "../../../layout/Global.module.css";
 
 function CountAppUsestate() {
   const [number, setNumber] = useState(0);
@@ -12,9 +13,14 @@ function CountAppUsestate() {
   }
 
   return (
-    <div>
-      <button onClick={decrement}>-</button> {number}{" "}
-      <button onClick={increment}>+</button>
+    <div className={classes.cardItem}>
+      <div className={classes.niceFlow}>
+        <h3>Count App useState</h3>
+        <div className={classes.displayMulti}>
+          <button onClick={decrement}>-</button> <div>{number}</div>
+          <button onClick={increment}>+</button>
+        </div>
+      </div>
     </div>
   );
 }
