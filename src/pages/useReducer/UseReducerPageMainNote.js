@@ -23,15 +23,6 @@ export default function UseReducerPageMainNote() {
           <span className={classes.value}>initialValue</span>)
         </span>
       </pre>
-      <p className={classes.footage}>
-        <a
-          href="https://dinarosita.github.io/codeyluwak/react_usereducer.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Read more in Codeyluwak
-        </a>
-      </p>
     </div>
   );
 }

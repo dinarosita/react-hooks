@@ -24,7 +24,7 @@ export default function WidthCase() {
       <div className={classes.niceFlow}>
         <h2>Window Width Case</h2>
         <div className={classes.cardItem}>
-          <div className={classes.displaySingle}>Window width: {windowWidth}</div>
+          <div>Window width: {windowWidth}</div>
         </div>
         <div className={classes.insertNote}>
           <p>

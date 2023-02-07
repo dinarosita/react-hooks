@@ -16,13 +16,13 @@ export default function UseContextPageMainNote() {
         </span>
       </pre>
 
-      <p>Create and export theme</p>
+      <p className={classes.paraTitle}>Create and export theme</p>
       <pre className={classes.formula}>
         export const <span className={classes.variable}>ThemeContext</span> =
         React.createContext()
       </pre>
 
-      <p>Use it as global parent in return block</p>
+      <p className={classes.paraTitle}>Use it as global parent in return block</p>
       <pre className={classes.formula}>
         &lt;<span className={classes.variable}>ThemeContext</span>.Provider{" "}
         <span className={classes.prop}>
@@ -39,15 +39,6 @@ export default function UseContextPageMainNote() {
         </span>
         <span className={classes.variable}>ThemeContext</span>.Provider&gt;
       </pre>
-      <p className={classes.footage}>
-        <a
-          href="https://dinarosita.github.io/codeyluwak/react_usecontext.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Read more in Codeyluwak
-        </a>
-      </p>
     </div>
   );
 }

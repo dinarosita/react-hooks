@@ -28,11 +28,54 @@
   font-size: larger;
   font-weight: bold;
   color: cadetblue;
+  margin-bottom: 0.5rem;
+}
+
+h1 + .tagline {
+  margin-top: -0.2rem;
 }
 
 .footage {
+  margin-top: 1rem;
   color: indianred;
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.footage li {
+  list-style: none;
+}
+
+.boxTitle,
+.boxTitleRed {
+  margin-bottom: 0.3rem;
+}
+
+.boxTitleRed {
+  color: indianred;
+}
+
+.paraTitle {
+  margin-bottom: 0.3rem;
+  color: cadetblue;
+  font-weight: bold;
+}
+
+.paraTitle + p {
+  margin-top: 0;
+}
+
+.paraChild {
+  margin: .5rem 0;
+}
+
+.listTitle {
+    margin-bottom: .5rem
+}
+.formula + .paraTitle {
+  margin-top: 2rem;
 }
 
 .formula {
@@ -67,12 +110,12 @@
 }
 
 .prop {
-    color: rgb(159, 91, 159);
-    font-weight: normal;
+  color: rgb(159, 91, 159);
+  font-weight: normal;
 }
 
 .element {
-    color:cornflowerblue
+  color: cornflowerblue;
 }
 .codeblock {
   color: steelblue;
@@ -89,6 +132,7 @@
   display: inline-block;
   padding: 0.5rem 0.5rem 0.4rem;
   font-size: 0.9rem;
+  margin-top: 0;
 }
 
 dd > .codeSnippet {

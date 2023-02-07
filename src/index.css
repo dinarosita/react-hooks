@@ -94,7 +94,7 @@ dl dl {
 }
 
 p + ul {
-    margin-top: -.8rem;
+    margin-top: 0;
 }
 
 strong {

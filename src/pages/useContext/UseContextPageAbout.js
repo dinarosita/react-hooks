@@ -8,6 +8,7 @@ export default function UseContextPageAbout() {
       hookName="useContext"
       tagline="Context allow values to be made global to all their descendents."
       notes=<UseContextPageMainNote />
+      codeyluwak="https://dinarosita.github.io/codeyluwak/react_usecontext.html"
       videoLink="https://www.youtube.com/watch?v=5LrDIWkK_Bc"
     />
   );

@@ -18,27 +18,22 @@ export default function UseMemoPageMainNote() {
         <span className={classes.depend}>[dependencies]</span>)</span>
       </pre>
 
-      <dl className={classes.dlMain}>
-        <dt>Slow function</dt>
-        <dd>
-          Use useMemo in slow functions because their unnecesarry rendering
-          causing page slowness.
-        </dd>
-        <dt>Reference based variable</dt>
-        <dd>
-          Use useMemo for reference based variables like object and array
+      <p className={classes.paraTitle}>Slow function</p>
+      <p>Use useMemo in slow functions because their unnecesarry rendering
+          causing page slowness.</p>
+
+          <p className={classes.paraTitle}>Reference based variable</p>
+          <p>Use useMemo for reference based variables like object and array
           because their values are only the reference/address to the actual
           value and will always change by new creation, even when everything
-          stays the same.
-        </dd>
-        <dt>Should I use it everytime?</dt>
-        <dd>
-          No, because it does open a new function to be run each time and it
+          stays the same.</p>
+
+          <p className={classes.paraTitle}>Should I use it everytime?</p>
+          <p>No, because it does open a new function to be run each time and it
           takes memory to store the value. Not a big deal when there's not many
           of it, but if it's becoming habit to use everytime, it will burden
-          overall operation instead of being useful. Use it when needed.
-        </dd>
-      </dl>
+          overall operation instead of being useful. Use it when needed.</p>
+
     </div>
   );
 }

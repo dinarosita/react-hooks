@@ -12,21 +12,20 @@ export default function UseRefPageMainNote() {
 
       <pre className={classes.formula}>
         const <span className={classes.variable}>refName</span> ={" "}
-        <span className={classes.thehook}>useRef(
-        <span className={classes.value}>initialValue</span>)</span>
+        <span className={classes.thehook}>
+          useRef(
+          <span className={classes.value}>initialValue</span>)
+        </span>
       </pre>
 
-      <dl className={classes.dlMain}>
-        {" "}
-        <dt>Doesn't cause re-rendering</dt>
-        <dd>
-          Imagine a counter to count how many times our app renders. Using{" "}
-          <code>useState</code>, the counting will cause state change, which
-          will cause rerendering. And so on into an infinite loop.{" "}
-          <code>useRef</code> provide a way to allow changes in variable that
-          doesn't cause re-rendering like <code>useState</code>
-        </dd>
-      </dl>
+      <p className={classes.paraTitle}>Doesn't cause re-rendering</p>
+      <p>
+        Imagine a counter to count how many times our app renders. Using{" "}
+        <code>useState</code>, the counting will cause state change, which will
+        cause rerendering. And so on into an infinite loop. <code>useRef</code>{" "}
+        provide a way to allow changes in variable that doesn't cause
+        re-rendering like <code>useState</code>
+      </p>
     </div>
   );
 }

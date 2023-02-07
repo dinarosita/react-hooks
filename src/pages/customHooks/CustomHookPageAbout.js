@@ -6,8 +6,9 @@ export default function CustomHookPageAbout() {
   return (
     <About
       hookName="CustomHook"
-      tagline=""
+      tagline="Create custom hook with useHookname format"
       notes=<CustomHookPageMainNote />
+      codeyluwak="https://dinarosita.github.io/codeyluwak/react_customhooks.html"
       videoLink="https://youtu.be/6ThXsUwLWvc?list=PLZlA0Gpn_vH8EtggFGERCwMY5u5hOjf-h"
     />
   );

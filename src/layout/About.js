@@ -11,11 +11,18 @@ export default function About(props) {
         </h1>
         <p className={classes.tagline}>{props.tagline}</p>
         <div>{props.notes}</div>
-        <p className={classes.footage}>
-          <a href={props.videoLink} target="_blank" rel="noopener noreferrer">
-            Watch WDS video
-          </a>
-        </p>
+        <ul className={classes.footage}>
+        <li>
+            <a href={props.videoLink} target="_blank" rel="noopener noreferrer">
+                Watch WDS video
+            </a>
+            </li>
+            {props.codeyluwak && 
+                <li>
+                <a href={props.codeyluwak} target="_blank" rel="noopener noreferrer">See more notes in CodeyLuwak</a></li>
+            }
+            
+        </ul>
       </div>
     </section>
   );

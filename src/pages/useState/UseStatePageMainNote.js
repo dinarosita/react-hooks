@@ -3,7 +3,7 @@ import classes from "../../layout/Global.module.css";
 
 export default function UseStatePageMainNote() {
   return (
-    <div>
+    <div className={classes.insertNote}>
       <p>
         useState is a hook that create states and manage its updates. It returns
         returns 2 values: the new state and function setState that update the

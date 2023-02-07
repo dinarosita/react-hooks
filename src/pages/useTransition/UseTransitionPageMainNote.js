@@ -15,26 +15,23 @@ export default function UseTransitionPageMainNote() {
         <span className={classes.variable}>startTransition</span>] ={" "}
         <span className={classes.thehook}>useTransition()</span>
       </pre>
-      <dl className={classes.dlMain}>
-        <dt>Returns 2 values</dt>
-        <dd>
-          <ul>
-            <li>
-              <strong>isPending</strong>: What to do/display instead in the case of
-              calculation not ready yet
-            </li>
-            <li>
-              <strong>startTransition</strong>: To wrap the low priority procedure.
-            </li>
-          </ul>
-        </dd>
-        <dt>Usage</dt>
-        <dd>
-          Only use this hook when it's absolutely needed, because this hook
-          cause much more rendering than normal. Can unnecesarrily burdening if
-          not actually needed.
-        </dd>
-      </dl> 
+      <p className={classes.listTitle}>Returns 2 values:</p>
+      <ul>
+        <li>
+          <strong>isPending</strong>: What to do/display instead in the case of
+          calculation not ready yet
+        </li>
+        <li>
+          <strong>startTransition</strong>: To wrap the low priority procedure.
+        </li>
+      </ul>
+      <p className={classes.paraTitle}>Usage</p>
+
+      <p>
+        Only use this hook when it's absolutely needed, because this hook cause
+        much more rendering than normal. Can unnecesarrily burdening if not
+        actually needed.
+      </p>
     </div>
   );
 }
