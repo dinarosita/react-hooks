@@ -1,9 +1,9 @@
 import React from "react";
-import classes from "../../../layout/Global.module.css"
-export default function UseUpdateLoggerCodes() {
+import classes from "../../layout/Global.module.css"
+
+export default function UseUpdateLoggerPageText() {
   const title1 = "MainApp.js";
-  const text1 = String.raw`
-function MainApp() {
+  const text1 = String.raw`function MainApp() {
   const [name, setName] = useLocalStorage("name", "");
   const [address, setAddress] = useLocalStorage("address", "");
 
@@ -11,23 +11,17 @@ function MainApp() {
   useUpdateLogger(address);
 
   return (...);
-}
-...
-`;
+}`;
 
   const title2 = "useUpdateLogger.js";
-  const text2 = String.raw`
-function useUpdateLogger(value) {
+  const text2 = String.raw`function useUpdateLogger(value) {
   useEffect(() => {
     console.log(value)
   }, [value])
-}
-...
-`;
+}`;
 
   const title3 = "MainApp.js";
-  const text3 = String.raw`
-function MainApp() {
+  const text3 = String.raw`function MainApp() {
   const [age, setAge] = useLocalStorage("age", "");
   const [trait, setTrait] = useLocalStorage("trait", "");
   
@@ -35,24 +29,18 @@ function MainApp() {
   useUpdateLogger("trait", trait);
 
   return (...);
-}
-...
-`;
+}`;
 
   const title4 = "useUpdateLogMine.js";
-  const text4 = String.raw`
-function useUpdateLogMine(key, value) {
+  const text4 = String.raw`function useUpdateLogMine(key, value) {
   useEffect(() => {
     console.log(key, ": ", value)
   }, [key, value])
-}
-...
-`;
+}`;
   return (
     <div className={classes.cardGroup}>
       <div>
-        <h3>useUpdateLogger</h3>
-        <p>Without key</p>
+        <h3>useUpdateLogger without Key</h3>
         <div>
           <h3>{title2}</h3>
           <pre>{text2}</pre>
@@ -65,8 +53,7 @@ function useUpdateLogMine(key, value) {
       </div>
 
       <div>
-        <h3>useUpdateLogMine</h3>
-        <p>With key</p>
+        <h3>useUpdateLoggerMine with Key</h3>
         <div>
           <h3>{title4}</h3>
           <pre>{text4}</pre>

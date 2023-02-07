@@ -7,13 +7,12 @@ import UseRefPage from "./pages/useRef/UseRefPage";
 import UseContextPage from "./pages/useContext/UseContextPage";
 import UseReducerPage from "./pages/useReducer/UseReducerPage";
 import UseCallBackPage from "./pages/useCallback/UseCallBackPage";
-import CustomHooksPage from "./pages/customHooks/CustomHooks";
 import UseLayoutEffectPage from "./pages/useLayoutEffect/UseLayoutEffectPage";
 import UseTransitionPage from "./pages/useTransition/UseTransitionPage";
 import UseDeferredValuePage from "./pages/useDeferredValue/UseDeferredValuePage";
 import Home from "./pages/Home.js";
-import UseEffectPage from "./pages/useEffect/UseEffectPage.js";
-import CustomHookPage from "./pages/customHooks/CustomHookPage.js";
+import UseEffectPage from "./pages/useEffect/UseEffectPage";
+import CustomHookPage from "./pages/customHooks/CustomHookPage";
 
 function App() {
   return (
@@ -44,7 +43,7 @@ function App() {
           <UseCallBackPage />
         </Route>
         <Route path="/react-hooks/customhooks">
-          <CustomHooksPage />
+          <CustomHookPage />
         </Route>
         <Route path="/react-hooks/uselayouteffect">
           <UseLayoutEffectPage />

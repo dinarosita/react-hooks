@@ -6,13 +6,13 @@ function getVal(key, initialVal) {
     if (initialVal instanceof Function) return initialVal();
     return initialVal
 }
-export default function useLocalMine (key, initialVal) {
+export default function useLocalStorageMine (key, initialVal) {
     const [value, setValue] = useState(() => {
         return getVal(key, initialVal)
     })
 
     useEffect(() => {
         localStorage.setItem(key, JSON.stringify(value))
-    }, [value])
+    }, [key, value])
     return [value, setValue]
 }
