@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
 import Bunny from "./DeferCaseDeferredInput";
@@ -19,34 +19,30 @@ export default function DeferCase() {
     }
   }
   return (
-    <section>
-      <div className={classes.niceFlow}>
-        <h2>Deferred Input Case</h2>
-        <div>
-          <label for="size">Enter list size (1-20000): </label>
+    <section className={classes.mainsection}>
+      <h2>Deferred Input Case</h2>
+      <div className={classes.scriptrun}>
+        <label for="size">Enter list size (1-20000): </label>
 
-          <input
-            id="size"
-            type="number"
-            value={size}
-            onChange={handleSize}
-            style={{ maxWidth: "5rem" }}
-          />
-        </div>
-
-        <div className={classes.cardGroup}>
-          <DeferCaseRegularInput size={size} />
-          <Bunny size={size} />
-          <DeferCaseOneFile size={size} />
-        </div>
-
-        <div className={classes.insertNote}>
-          <p>Open console to see input vs deferred input.</p>
-        </div>
-        <ShowHideProvider>
-          <ShowHideButton textFile=<DeferCaseText /> />
-        </ShowHideProvider>
+        <input
+          id="size"
+          type="number"
+          value={size}
+          onChange={handleSize}
+          style={{ maxWidth: "5rem" }}
+        />
       </div>
+
+      <div className={classes.horizontalFlex}>
+        <DeferCaseRegularInput size={size} />
+        <Bunny size={size} />
+        <DeferCaseOneFile size={size} />
+      </div>
+
+      <p>Open console to see input vs deferred input.</p>
+      <ShowHideProvider>
+        <ShowHideButton textFile=<DeferCaseText /> />
+      </ShowHideProvider>
     </section>
   );
 }

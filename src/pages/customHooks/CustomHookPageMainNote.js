@@ -1,5 +1,7 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
+
 
 export default function CustomHookPageMainNote() {
   return (
@@ -11,12 +13,12 @@ export default function CustomHookPageMainNote() {
         expected. Name the js file using the same name.
       </p>
 
-      <p className={classes.boxTitleRed}>useCustom.js</p>
+      <p className={classes.formulaTitle}>useCustom.js</p>
       <pre className={classes.formula}>
         function{" "}
-        <span className={classes.thehook}>
+        <span className={fc.foc}>
           useCustom() {"{"}
-          <span className={classes.codeblock}>...</span>
+          <span className={fc.block}>...</span>
           {"}"}
         </span>
       </pre>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 
 export default function ReferenceCasePlain() {
   const [number, setNumber] = useState(0);
@@ -16,31 +16,26 @@ export default function ReferenceCasePlain() {
     console.log("theme changed");
     renderCount.current = renderCount.current + 1;
   }, [themeStyles]);
-  
+
   return (
-    <div className={classes.cardItem} style={themeStyles}>
-      <div className={classes.niceFlow}>
-        <h3>Plain</h3>
-        <div className={classes.insertNote}>
-          <p>
-            themeStyles is an object variable.Without useMemo, it gets
-            rerendered when changing number.
-          </p>
-        </div>
-        <div className={classes.displayMulti}>
-          <input
-            type="number"
-            value={number}
-            onChange={(e) => setNumber(parseInt(e.target.value))}
-          />
-          <div>Doubled: {number * 2}</div>
-        </div>
+    <section className={classes.subsection}>
+      <h3>Plain</h3>
+        <p>
+          themeStyles is an object variable.Without useMemo, it gets rerendered
+          when changing number.
+        </p>
+      <div className={classes.scriptrun} style={themeStyles}>
+        <input
+          type="number"
+          value={number}
+          onChange={(e) => setNumber(parseInt(e.target.value))}
+        />
+        <div>Doubled: {number * 2}</div>
         <button onClick={() => setDark((prevDark) => !prevDark)}>
           Change Theme
         </button>
-
         <div>Theme render count: {renderCount.current}</div>
       </div>
-    </div>
+    </section>
   );
 }

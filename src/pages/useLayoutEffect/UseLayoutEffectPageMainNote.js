@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
 
 export default function UseLayoutEffectPageMainNote() {
   return (
@@ -17,9 +18,9 @@ export default function UseLayoutEffectPageMainNote() {
         but could be slow. So only use when it's needed.
       </p>
       <pre className={classes.formula}>
-        <span className={classes.thehook}>useLayoutEffect(
-        <span className={classes.func}>layoutFunction</span>,{" "}
-        <span className={classes.depend}>[dependencies]</span>)</span>
+        <span className={fc.foc}>useLayoutEffect(
+        <span className={fc.fn}>layoutFn</span>,{" "}
+        <span className={fc.dep}>[dependencies]</span>)</span>
       </pre>
     </div>
   );

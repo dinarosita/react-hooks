@@ -13,22 +13,6 @@ main {
     gap: 1rem;
     margin-top: .5rem;
 }
-section {
-  border: 5px double cadetblue;
-  border-radius: 0.5rem;
-  margin: 0;
-  padding: .7rem 1rem 1rem;
-}
-
-code,
-pre {
-  font-family: "Courier New", monospace;
-}
-
-code {
-    font-size: .95rem;
-    color: cadetblue
-}
 
 button {
   border: 1px solid steelblue;
@@ -75,27 +59,6 @@ h4 {
   font-size: medium;
 }
 
-dt {
-    font-weight: bold;
-    color: cadetblue;
-}
-
-dd + dt {
-    margin-top: 1rem;
-}
-
-dd > ul:first-child {
-    margin-top: .5rem;
-    padding-left: 1.2rem
-}
-
-dl dl {
-    margin-left: 1rem;
-}
-
-p + ul {
-    margin-top: 0;
-}
 
 strong {
     color: cadetblue;

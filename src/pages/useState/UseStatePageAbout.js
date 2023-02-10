@@ -6,7 +6,7 @@ export default function UseStatePageAbout() {
   return (
     <About
       hookName="useState"
-      tagline="Create state and manage its updates"
+      tagline="Add a state variable to component and manage its updates"
       notes=<UseStatePageMainNote />
       videoLink="https://www.youtube.com/watch?v=O6P86uwfdR0&t=19s"
     />

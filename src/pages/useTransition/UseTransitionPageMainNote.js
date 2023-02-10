@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
 
 export default function UseTransitionPageMainNote() {
   return (
@@ -11,9 +12,9 @@ export default function UseTransitionPageMainNote() {
         will render them separately.
       </p>
       <pre className={classes.formula}>
-        const [<span className={classes.variable}>isPending</span>,{" "}
-        <span className={classes.variable}>startTransition</span>] ={" "}
-        <span className={classes.thehook}>useTransition()</span>
+        const [<span className={fc.flag}>isPending</span>,{" "}
+        <span className={fc.fn}>startTransition</span>] ={" "}
+        <span className={fc.foc}>useTransition()</span>
       </pre>
       <p className={classes.listTitle}>Returns 2 values:</p>
       <ul>

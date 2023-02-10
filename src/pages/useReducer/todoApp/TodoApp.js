@@ -1,6 +1,8 @@
 import React, { useReducer, useState } from "react";
 import Todo from "./Todo";
-import classes from "../../../layout/Global.module.css";
+import classes from "../../../styles/Global.module.css";
+import todoclasses from "./Todo.module.css";
+
 
 export const ACTIONS = {
   ADD_TODO: "add-todo",
@@ -40,9 +42,9 @@ export default function TodoApp() {
     setName("");
   }
   return (
-    <div className={classes.cardItem}>
-      <div className={classes.niceFlow}>
-        <h3>Todo App</h3>
+    <div className={classes.scriptrun}>
+      <div className={todoclasses.todo}>
+        <p className={classes.scriptTitle}>Todo App</p>
         <form onSubmit={handleSubmit}>
           <input
             type="text"

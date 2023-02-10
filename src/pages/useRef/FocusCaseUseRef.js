@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 
 export default function FocusCaseUseRef() {
   const [name, setName] = useState("Dina");
@@ -10,19 +10,17 @@ export default function FocusCaseUseRef() {
   }
 
   return (
-    <div className={classes.cardItem}>
-      <div className={classes.niceFlow}>
-        <h3>Focus on Input</h3>
-        <div className={classes.cardItem}>
-          <input
-            ref={inputRef}
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <div>Name: {name}</div>
-          <button onClick={focus}>Focus</button>
-        </div>
+    <section className={classes.subsection}>
+      <h3>Focus on Input</h3>
+      <div className={classes.scriptrun}>
+        <input
+          ref={inputRef}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <div>Name: {name}</div>
+        <button onClick={focus}>Focus</button>
       </div>
-    </div>
+    </section>
   );
 }

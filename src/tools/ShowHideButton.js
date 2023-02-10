@@ -1,6 +1,6 @@
 import React from "react";
 import { useDisplay, useDisplayUpdate } from "./ToggleContext";
-import classes from "../layout/Global.module.css";
+import classes from "../styles/Global.module.css";
 
 export default function ShowHideButton(props) {
   const show = useDisplay();
@@ -9,13 +9,14 @@ export default function ShowHideButton(props) {
   const displayStatus = {
     display: show ? "block" : "none",
   };
-
+ 
   return (
-    <div className={classes.showHide}>
+    <div>
+        <p>{props.insert}</p>
       <button onClick={toggleDisplay} className={classes.toggleButton}>
         {show ? "Hide codes" : "Show codes"}
       </button>
-      <div style={displayStatus} className={classes.codeGroup}>{props.textFile}</div>
+      <div style={displayStatus} className={classes.codeDisplay}>{props.textFile}</div>
     </div>
   );
 }

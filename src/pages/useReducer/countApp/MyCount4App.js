@@ -1,5 +1,5 @@
 import React, { useReducer } from "react";
-import classes from "../../../layout/Global.module.css";
+import classes from "../../../styles/Global.module.css";
 
 const ACTIONS = {
   DECREMENT_BY3: "decrementBy3",
@@ -29,14 +29,12 @@ function MyCount4App() {
   }
 
   return (
-    <div className={classes.cardItem}>
-      <div className={classes.niceFlow}>
-        <h3>My Count App: Increment 2</h3>
-        <div className={classes.displayMulti}>
-          <button onClick={decrementBy3}>-3</button>
-          <div>{state.count}</div>
-          <button onClick={incrementBy3}>+3</button>
-        </div>
+    <div className={classes.scriptrun}>
+      <p className={classes.scriptTitle}>My Count App: Increment 2</p>
+      <div className={classes.horizontalFlex}>
+        <button onClick={decrementBy3}>-3</button>
+        <div>{state.count}</div>
+        <button onClick={incrementBy3}>+3</button>
       </div>
     </div>
   );

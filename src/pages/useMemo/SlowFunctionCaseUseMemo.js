@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 
 export default function SlowFunctionCaseUseMemo() {
   const [number, setNumber] = useState(0);
@@ -13,28 +13,26 @@ export default function SlowFunctionCaseUseMemo() {
   };
 
   return (
-    <div className={classes.cardItem} style={themeStyles}>
-      <div className={classes.niceFlow}>
-        <h3>useMemo</h3>
-        <div className={classes.insertNote}>
-          <p>
-            Double number is a slow function that is memoized. Changing theme is
-            now fast because double number doesn't rerendered.
-          </p>
-        </div>
-        <div className={classes.displayMulti}>
-          <input
-            type="number"
-            value={number}
-            onChange={(e) => setNumber(parseInt(e.target.value))}
-          />
-          <div>Doubled: {doubleNumber}</div>
-        </div>
+    <section className={classes.subsection}>
+      <h3>useMemo</h3>
+      <div className={classes.insertNote}>
+        <p>
+          Double number is a slow function that is memoized. Changing theme is
+          now fast because double number doesn't rerendered.
+        </p>
+      </div>
+      <div className={classes.scriptrun} style={themeStyles}>
+        <input
+          type="number"
+          value={number}
+          onChange={(e) => setNumber(parseInt(e.target.value))}
+        />
+        <div>Doubled: {doubleNumber}</div>
         <button onClick={() => setDark((prevDark) => !prevDark)}>
           Change Theme
         </button>
       </div>
-    </div>
+    </section>
   );
 }
 

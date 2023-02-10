@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css";
 
 export default function UseContextPageMainNote() {
   return (
@@ -10,34 +11,38 @@ export default function UseContextPageMainNote() {
       </p>
 
       <pre className={classes.formula}>
-        const <span className={classes.variable}>darkTheme</span> ={" "}
-        <span className={classes.thehook}>
-          useContext(<span className={classes.variable}>ThemeContext</span>)
+        const <span className={fc.var}>contextVal</span> ={" "}
+        <span className={fc.foc}>
+          useContext(<span className={fc.var}>SomeContext</span>)
         </span>
       </pre>
 
-      <p className={classes.paraTitle}>Create and export theme</p>
+      <p className={classes.formulaTitle}>Create and export theme</p>
       <pre className={classes.formula}>
-        export const <span className={classes.variable}>ThemeContext</span> =
-        React.createContext()
+        export const <span className={fc.foc}>SomeContext</span> ={" "}
+        <span className={fc.fn}>React.createContext()</span>
       </pre>
 
-      <p className={classes.paraTitle}>Use it as global parent in return block</p>
+      <p className={classes.formulaTitle}>
+        Use it as global parent in return block
+      </p>
       <pre className={classes.formula}>
-        &lt;<span className={classes.variable}>ThemeContext</span>.Provider{" "}
-        <span className={classes.prop}>
-          value={"{"}
-          <span className={classes.value}>darkTheme</span>
-          {"}"}
-        </span>
-        <span className={classes.codeblock}>
+        <span className={fc.foc}>
+          &lt;SomeContext<span className={fc.att}>.Provider</span>{" "}
+          <span className={fc.prop}>
+            value={"{"}
+            <span className={fc.propval}>contextVal</span>
+            {"}"}
+          </span>
           &gt;
-          <br />
-          {"  "}...child...
-          <br />
-          &lt;
         </span>
-        <span className={classes.variable}>ThemeContext</span>.Provider&gt;
+        <br />
+        {"  "}
+        <span className={fc.block}>...child...</span>
+        <br />
+        <span className={fc.foc}>
+          &lt;/SomeContext<span className={fc.att}>.Provider</span>&gt;
+        </span>
       </pre>
     </div>
   );

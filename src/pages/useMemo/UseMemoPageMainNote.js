@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
 
 export default function UseMemoPageMainNote() {
   return (
@@ -12,10 +13,10 @@ export default function UseMemoPageMainNote() {
       </p>
 
       <pre className={classes.formula}>
-        const <span className={classes.variable}>memoVal</span> ={" "}
-        <span className={classes.thehook}>useMemo(
-        <span className={classes.func}>memoFunction</span>,{" "}
-        <span className={classes.depend}>[dependencies]</span>)</span>
+        const <span className={fc.var}>cachedVal</span> ={" "}
+        <span className={fc.foc}>useMemo(
+        <span className={fc.fn}>calculateValFn</span>,{" "}
+        <span className={fc.dep}>[dependencies]</span>)</span>
       </pre>
 
       <p className={classes.paraTitle}>Slow function</p>

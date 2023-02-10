@@ -1,0 +1,59 @@
+.foc {
+  color: indianred;
+  font-weight: bold;
+}
+.foc2 {
+  color:lightcoral;
+  font-weight: bold;
+}
+
+.fn {
+  color: darksalmon;
+}
+
+.var {
+  color: cadetblue;
+}
+
+.val {
+  color: cadetblue;
+  font-weight: normal;
+}
+
+.dep,
+.flag {
+  color: cadetblue;
+  font-weight: normal;
+}
+
+.prop {
+  color: orchid;
+  font-weight: normal;
+}
+
+.prop2 {
+  color: dodgerblue;
+  font-weight: normal;
+}
+
+.propval {
+  color: cornflowerblue;
+  font-weight: normal;
+}
+.el {
+  color: cornflowerblue;
+}
+
+.block {
+  color: slategray;
+  font-weight: normal;
+}
+.att {
+  color: lightcoral;
+  font-weight: bold;
+}
+
+pre.indent {
+  padding-left: 1rem;
+  margin: 0;
+}

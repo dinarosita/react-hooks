@@ -10,6 +10,8 @@ import UseCallbackPageAbout from './useCallback/UseCallbackPageAbout'
 import UseContextPageAbout from './useContext/UseContextPageAbout'
 import UseReducerPageAbout from './useReducer/UseReducerPageAbout'
 import CustomHookPageAbout from './customHooks/CustomHookPageAbout'
+import UseImperativeHandlePageAbout from './useImperativeHandle/UseImperativeHandlePageAbout'
+import RandomTips from './RandomTips'
 
 export default function Home() {
   return (
@@ -24,7 +26,9 @@ export default function Home() {
       <UseTransitionPageAbout />
       <UseDeferredValuePageAbout />
       <UseCallbackPageAbout />
+      <UseImperativeHandlePageAbout />
       <CustomHookPageAbout />
+      <RandomTips />
     </main>
   )
 }

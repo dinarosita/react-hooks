@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
 
 export default function UseEffectPageMainNote() {
   return (
@@ -12,10 +13,10 @@ export default function UseEffectPageMainNote() {
       </p>
 
       <pre className={classes.formula}>
-        <span className={classes.thehook}>
+        <span className={fc.foc}>
           useEffect(
-          <span className={classes.func}>effectFunction</span>,{" "}
-          <span className={classes.depend}>[dependencies]</span>)
+          <span className={fc.fn}>effectFn</span>,{" "}
+          <span className={fc.dep}>[dependencies]</span>)
         </span>
       </pre>
 

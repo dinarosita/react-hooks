@@ -13,6 +13,8 @@ import UseDeferredValuePage from "./pages/useDeferredValue/UseDeferredValuePage"
 import Home from "./pages/Home.js";
 import UseEffectPage from "./pages/useEffect/UseEffectPage";
 import CustomHookPage from "./pages/customHooks/CustomHookPage";
+import UseImperativeHandlePage from "./pages/useImperativeHandle/UseImperativeHandlePage";
+import RandomTips from "./pages/RandomTips.js";
 
 function App() {
   return (
@@ -54,8 +56,14 @@ function App() {
         <Route path="/react-hooks/usedeferredvalue">
           <UseDeferredValuePage />
         </Route>
+        <Route path="/react-hooks/useimperativehandle">
+            <UseImperativeHandlePage />
+        </Route>
         <Route path="/react-hooks/customhook">
           <CustomHookPage />
+        </Route>
+        <Route path="/react-hooks/randomtips">
+          <RandomTips />
         </Route>
       </Switch>
     </Layout>

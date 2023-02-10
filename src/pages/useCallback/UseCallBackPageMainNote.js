@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
 
 export default function UseCallbackPageMainNote() {
   return (
@@ -12,11 +13,11 @@ export default function UseCallbackPageMainNote() {
       </p>
 
       <pre className={classes.formula}>
-        const <span className={classes.variable}>callbackVal</span> ={" "}
-        <span className={classes.thehook}>
+        const <span className={fc.var}>cachedFn</span> ={" "}
+        <span className={fc.foc}>
           useCallback(
-          <span className={classes.func}>callbackFunction</span>,{" "}
-          <span className={classes.depend}>[dependencies]</span>)
+          <span className={fc.fn}>callbackFn</span>,{" "}
+          <span className={fc.dep}>[dependencies]</span>)
         </span>
       </pre>
       <p className={classes.paraTitle}>

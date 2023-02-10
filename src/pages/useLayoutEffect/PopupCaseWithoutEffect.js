@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef, useState } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 
 export default function PopupCaseWithoutEffect() {
   const [show, setShow] = useState(true);
@@ -8,9 +8,9 @@ export default function PopupCaseWithoutEffect() {
   const button = useRef();
 
   return (
-    <div className={classes.cardItem}><div className={classes.niceFlow}>
+    <div className={classes.scriptrun}>
       
-        <h3>No effect</h3>
+        <p className={classes.scriptTitle}>No effect</p>
         <div style={{ height: "100px" }}>
           <button ref={button} onClick={() => setShow((prev) => !prev)}>
             Without effect
@@ -30,6 +30,5 @@ export default function PopupCaseWithoutEffect() {
           )}
         </div>
       </div>
-    </div>
-  );
+     );
 }

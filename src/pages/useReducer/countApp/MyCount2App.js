@@ -1,5 +1,5 @@
 import React, { useReducer } from "react";
-import classes from "../../../layout/Global.module.css";
+import classes from "../../../styles/Global.module.css";
 
 function reducer(state, action) {
   return { count: state.count + 2 };
@@ -12,13 +12,11 @@ function MyCount2App() {
     dispatch();
   }
   return (
-    <div className={classes.cardItem}>
-      <div className={classes.niceFlow}>
-        <h3>My Count App: Increment 2</h3>
-        <div className={classes.displayMulti}>
-          <div>{state.count}</div>
-          <button onClick={incrementBy2}>+2</button>
-        </div>
+    <div className={classes.scriptrun}>
+      <p className={classes.scriptTitle}>My Count App: Increment 2</p>
+      <div className={classes.horizontalFlex}>
+        <div>{state.count}</div>
+        <button onClick={incrementBy2}>+2</button>
       </div>
     </div>
   );

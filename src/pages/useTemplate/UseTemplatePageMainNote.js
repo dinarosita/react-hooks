@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
 
 export default function UseTemplatePageMainNote() {
   return (
@@ -7,9 +8,9 @@ export default function UseTemplatePageMainNote() {
       <p>Note</p>
 
       <pre className={classes.formula}>
-        <span className={classes.thehook}>hook</span>
-        <span className={classes.variable}>variable</span>
-        <span className={classes.codeblock}>codeblock</span></pre>
+        <span className={fc.foc}>hook</span>
+        <span className={fc.var}>variable</span>
+        <span className={fc.block}>codeblock</span></pre>
     </div>
   );
 }

@@ -41,7 +41,13 @@ function MainNavigation() {
             <Link to="/react-hooks/usedeferredvalue">useDeferredValue &#10710;</Link>
           </li>
           <li>
+            <Link to="/react-hooks/useimperativehandle">useImperativeHandle</Link>
+          </li>
+          <li>
             <Link to="/react-hooks/customhook">Custom Hook</Link>
+          </li>
+          <li>
+            <Link to="/react-hooks/randomtips">Random Tips</Link>
           </li>
         </ul>
       </nav>

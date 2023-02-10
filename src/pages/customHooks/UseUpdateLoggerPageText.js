@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../layout/Global.module.css"
+import classes from "../../styles/CodeText.module.css";
 
 export default function UseUpdateLoggerPageText() {
   const title1 = "MainApp.js";
@@ -38,33 +38,30 @@ export default function UseUpdateLoggerPageText() {
   }, [key, value])
 }`;
   return (
-    <div className={classes.cardGroup}>
-      <div>
-        <h3>useUpdateLogger without Key</h3>
-        <div>
-          <h3>{title2}</h3>
+    <div className={classes.horizontalFlex}>
+      <div className={classes.verticalFlex}>
+        <pre className={classes.verticalTitle}>useUpdateLogger without Key</pre>
+        <div className={classes.codeBox}>
+          <pre>{title2}</pre>
           <pre>{text2}</pre>
         </div>
-        <br />
-        <div>
-          <h3>{title1}</h3>
+        <div className={classes.codeBox}>
+          <pre>{title1}</pre>
           <pre>{text1}</pre>
         </div>
       </div>
 
-      <div>
-        <h3>useUpdateLoggerMine with Key</h3>
-        <div>
-          <h3>{title4}</h3>
+      <div className={classes.verticalFlex}>
+        <pre className={classes.verticalTitle}>useUpdateLoggerMine with Key</pre>
+        <div className={classes.codeBox}>
+          <pre>{title4}</pre>
           <pre>{text4}</pre>
         </div>
-        <br />
-        <div>
-          <h3>{title3}</h3>
+        <div className={classes.codeBox}>
+          <pre>{title3}</pre>
           <pre>{text3}</pre>
         </div>
       </div>
-
     </div>
   );
 }

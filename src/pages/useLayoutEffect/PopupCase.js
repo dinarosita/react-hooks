@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
 import PopupCaseText from "./PopupCaseText";
@@ -9,28 +9,23 @@ import PopupCaseWithoutEffect from "./PopupCaseWithoutEffect";
 
 export default function PopupCase() {
   return (
-    <section>
-      <div className={classes.niceFlow}>
-        <h2>Popup Layout Case</h2>
-        <React.StrictMode>
-          <div className={classes.cardGroup}>
-            <PopupCaseEffect />
-            <PopupCaseLayoutEffect />
-            <PopupCaseWithoutEffect />
-          </div>
-          
-        </React.StrictMode>
-        <div className={classes.insertNote}>
-          <p>
-            Refresh page to see the lagged effect when useEffect is used instead
-            of useLayoutEffect. Button without effect is included for
-            comparison.
-          </p>
+    <section className={classes.mainsection}>
+      <h2>Popup Layout Case</h2>
+      <React.StrictMode>
+        <div className={classes.horizontalFlex}>
+          <PopupCaseEffect />
+          <PopupCaseLayoutEffect />
+          <PopupCaseWithoutEffect />
         </div>
-        <ShowHideProvider>
-          <ShowHideButton textFile=<PopupCaseText /> />
-        </ShowHideProvider>
-      </div>
+      </React.StrictMode>
+
+      <p>
+        Refresh page to see the lagged effect when useEffect is used instead of
+        useLayoutEffect. Button without effect is included for comparison.
+      </p>
+      <ShowHideProvider>
+        <ShowHideButton textFile=<PopupCaseText /> />
+      </ShowHideProvider>
     </section>
   );
 }

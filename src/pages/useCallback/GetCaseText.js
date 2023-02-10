@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../layout/Global.module.css"
+import classes from "../../styles/CodeText.module.css";
 
 export default function GetCaseText() {
   const title1 = "App.js plain";
@@ -34,8 +34,8 @@ export default function GetCasePlain() {
   );
 }`;
 
-    const title2 = "App.js useCallback";
-    const text2 = String.raw`import GetCaseList from "./GetCaseList.js";
+  const title2 = "App.js useCallback";
+  const text2 = String.raw`import GetCaseList from "./GetCaseList.js";
 
 export default function GetCaseUseCallback() {
   const [number, setNumber] = useState(1);
@@ -89,17 +89,17 @@ export default function GetCaseUseCallback() {
 `;
 
   return (
-    <div className={classes.cardGroup}>
-      <div>
-        <h3>{title1}</h3>
+    <div className={classes.horizontalFlex}>
+      <div className={classes.codeBox}>
+        <pre>{title1}</pre>
         <pre>{text1}</pre>
       </div>
-      <div>
-        <h3>{title2}</h3>
+      <div className={classes.codeBox}>
+        <pre>{title2}</pre>
         <pre>{text2}</pre>
       </div>
-      <div>
-        <h3>{title3}</h3>
+      <div className={classes.codeBox}>
+        <pre>{title3}</pre>
         <pre>{text3}</pre>
       </div>
     </div>

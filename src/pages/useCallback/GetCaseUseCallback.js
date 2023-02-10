@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 import GetCaseList from "./GetCaseList.js";
 
 export default function GetCaseUseCallback() {
@@ -16,22 +16,20 @@ export default function GetCaseUseCallback() {
   };
 
   return (
-    <div className={classes.cardItem} style={theme}>
-      <div className={classes.niceFlow}>
-        <h3>With useCallback</h3>
-        <div>
-          <input
-            type="number"
-            value={number}
-            onChange={(e) => setNumber(parseInt(e.target.value))}
-          />
-
-          <GetCaseList getItems={getItems} />
-          <button onClick={() => setDark((prevDark) => !prevDark)}>
-            Toggle theme
-          </button>
-        </div>
+    <section className={classes.subsection}>
+      <h3>With useCallback</h3>
+      <div className={classes.scriptrun} style={theme}>
+        {" "}
+        <input
+          type="number"
+          value={number}
+          onChange={(e) => setNumber(parseInt(e.target.value))}
+        />
+        <GetCaseList getItems={getItems} />
+        <button onClick={() => setDark((prevDark) => !prevDark)}>
+          Toggle theme
+        </button>
       </div>
-    </div>
+    </section>
   );
 }

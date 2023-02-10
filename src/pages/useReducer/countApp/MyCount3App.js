@@ -1,5 +1,5 @@
 import React, { useReducer } from "react";
-import classes from "../../../layout/Global.module.css";
+import classes from "../../../styles/Global.module.css";
 
 const ACTIONS = {
   ZERO: "zero",
@@ -29,14 +29,12 @@ function MyCount3App() {
   }
 
   return (
-    <div className={classes.cardItem}>
-      <div className={classes.niceFlow}>
-        <h3>My Count App: Increment 2</h3>
-        <div className={classes.displayMulti}>
-          <button onClick={zero}>0</button>
-          <div>{state.count}</div>
-          <button onClick={incrementBy2}>+2</button>
-        </div>
+    <div className={classes.scriptrun}>
+      <p className={classes.scriptTitle}>My Count App: Increment 2</p>
+      <div className={classes.horizontalFlex}>
+        <button onClick={zero}>0</button>
+        <div>{state.count}</div>
+        <button onClick={incrementBy2}>+2</button>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
 
 export default function UseStatePageMainNote() {
   return (
@@ -12,8 +13,8 @@ export default function UseStatePageMainNote() {
         state value will be used, until setState update it with new value.
       </p>
       <pre className={classes.formula}>
-        const [<span className={classes.variable}>state</span>, <span className={classes.func}>setState</span>] = <span className={classes.thehook}>useState(
-        <span className={classes.value}>initialState</span>)</span>
+        const [<span className={fc.var}>state</span>, <span className={fc.fn}>setState</span>] = <span className={fc.foc}>useState(
+        <span className={fc.val}>initialState</span>)</span>
       </pre>
     </div>
   );

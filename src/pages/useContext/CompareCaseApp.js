@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 import CompareCaseClassConsumer from "./CompareCaseClassConsumer";
 import CompareCaseFunctionConsumer from "./CompareCaseFunctionConsumer";
 
@@ -13,12 +13,12 @@ export default function CompareCaseApp() {
   }
 
   return (
-    <div className={classes.cardItem}>
+    <div className={classes.scriptrun}>
       <CompareCaseThemeContext.Provider value={darkTheme}>
         <button onClick={toggleTheme} style={{ width: "fit-content" }}>
           Toggle Theme
         </button>
-        <div className={classes.displayMulti}>
+        <div className={classes.horizontalFlex}>
           <CompareCaseFunctionConsumer />
           <CompareCaseClassConsumer />
         </div>

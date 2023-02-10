@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/CodeText.module.css";
 
 export default function SlowFunctionCaseText() {
   const title1 = "Plain";
@@ -69,13 +69,13 @@ function slowFunction(num) {
 }`;
 
   return (
-    <div className={classes.cardGroup}>
-      <div>
-        <h3>{title1}</h3>
+    <div className={classes.horizontalFlex}>
+      <div className={classes.codeBox}>
+        <pre>{title1}</pre>
         <pre>{text1}</pre>
       </div>
-      <div>
-        <h3>{title2}</h3>
+      <div className={classes.codeBox}>
+        <pre>{title2}</pre>
         <pre>{text2}</pre>
       </div>
     </div>

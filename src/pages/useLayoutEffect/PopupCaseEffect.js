@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 
 function slowFunction(num) {
   for (let i = 0; i <= 1000000000; i++) {}
@@ -20,27 +20,25 @@ export default function PopupCaseEffect() {
   }, [show]);
 
   return (
-    <div className={classes.cardItem}>
-      <div className={classes.niceFlow}>
-        <h3>useEffect</h3>
-        <div style={{ height: "100px" }}>
-          <button ref={button} onClick={() => setShow((prev) => !prev)}>
-            useEffect
-          </button>
-          {show && (
-            <div
-              style={{
-                position: "absolute",
-                color: "indianred",
-                border: "solid 3px indianred",
-                padding: ".5rem",
-              }}
-              ref={popup}
-            >
-              useEffect popup
-            </div>
-          )}
-        </div>
+    <div className={classes.scriptrun}>
+      <p className={classes.scriptTitle}>useEffect</p>
+      <div style={{ height: "100px" }}>
+        <button ref={button} onClick={() => setShow((prev) => !prev)}>
+          useEffect
+        </button>
+        {show && (
+          <div
+            style={{
+              position: "absolute",
+              color: "indianred",
+              border: "solid 3px indianred",
+              padding: ".5rem",
+            }}
+            ref={popup}
+          >
+            useEffect popup
+          </div>
+        )}
       </div>
     </div>
   );

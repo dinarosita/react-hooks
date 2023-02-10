@@ -1,8 +1,8 @@
 import React from "react";
-import classes from "../../layout/Global.module.css"
+import classes from "../../styles/CodeText.module.css";
 
 export default function SimplifyCaseText() {
-  const title1 = "Before simplifying"
+  const title1 = "Before simplifying";
   const title1a = "CompareCaseApp.js";
   const text1a = String.raw`export const ThemeContext = React.createContext();
 
@@ -40,7 +40,7 @@ export default function FunctionConsumer() {
   )
 }`;
 
-  const title2 = "Simplified"
+  const title2 = "Simplified";
   const title2a = "SimplifyCaseApp.js";
   const text2a = String.raw`import { ThemeProvider } from "./ThemeContext";
   
@@ -104,31 +104,31 @@ export default function SimplifyCaseConsumer() {
   );
 }`;
   return (
-    <div className={classes.cardGroup}>
-        
-      <div>
-      <h3>{title1}</h3>
-        <div className={classes.borderedbox}>
-          <h4>{title1a}</h4>
+    <div className={classes.horizontalFlex}>
+      <div className={classes.verticalFlex}>
+        <pre className={classes.verticalTitle}>{title1}</pre>
+        <div className={classes.codeBox}>
+          <pre>{title1a}</pre>
           <pre>{text1a}</pre>
         </div>
-        <div className={classes.borderedbox}>
-          <h4>{title1b}</h4>
+        <div className={classes.codeBox}>
+          <pre>{title1b}</pre>
           <pre>{text1b}</pre>
         </div>
       </div>
-      <div>
-        <h3>{title2}</h3>
-        <div className={classes.borderedbox}>
-          <h4>{title2a}</h4>
+
+      <div className={classes.verticalFlex}>
+        <pre className={classes.verticalTitle}>{title2}</pre>
+        <div className={classes.codeBox}>
+          <pre>{title2a}</pre>
           <pre>{text2a}</pre>
         </div>
-        <div className={classes.borderedbox}>
-          <h4>{title2b}</h4>
+        <div className={classes.codeBox}>
+          <pre>{title2b}</pre>
           <pre>{text2b}</pre>
         </div>
-        <div className={classes.borderedbox}>
-          <h4>{title2c}</h4>
+        <div className={classes.codeBox}>
+          <pre>{title2c}</pre>
           <pre>{text2c}</pre>
         </div>
       </div>

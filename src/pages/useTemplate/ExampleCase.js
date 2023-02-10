@@ -1,28 +1,25 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
-import ExampleScenario from "./ExampleScenario";
-import ExampleText from "./ExampleText";
+import ExampleCaseScenario from "./ExampleCaseScenario";
+import ExampleCaseText from "./ExampleCaseText";
 
 
 export default function ExampleCase() {
   return (
-    <section>
-      <div className={classes.niceFlow}>
+    <section className={classes.mainsection}>
+      
         <h2>Example Case</h2>
-        <div className={classes.cardGroup}>
-          <ExampleScenario />
-          <ExampleScenario />
+        <div className={classes.horizontalFlex}>
+          <ExampleCaseScenario />
+          <ExampleCaseScenario />
         </div>
 
-        <div className={classes.insertNote}>
-          <p>Note</p>
-        </div>
+
         <ShowHideProvider>
-          <ShowHideButton textFile=<ExampleText /> />
+          <ShowHideButton textFile=<ExampleCaseText /> />
         </ShowHideProvider>
-      </div>
-    </section>
+ </section>
   );
 }

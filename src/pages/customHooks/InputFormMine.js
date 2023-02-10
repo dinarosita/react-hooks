@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 import useLocalStorageMine from "./useLocalStorageMine";
 import useUpdateLoggerMine from "./useUpdateLoggerMine";
 
@@ -10,24 +10,22 @@ export default function InputFormMine() {
   useUpdateLoggerMine("trait", trait);
 
   return (
-    <div className={classes.cardItem}>
-      <div className={classes.niceFlow}>
-        <h3>MyExercise</h3>
-        <input
-          type="text"
-          value={age}
-          onChange={(e) => setAge(e.target.value)}
-          placeholder="Type age"
-        />
-        <p>Age: {age}</p>
-        <input
-          type="text"
-          value={trait}
-          onChange={(e) => setTrait(e.target.value)}
-          placeholder="Type trait"
-        />
-        <p>Trait: {trait}</p>
-      </div>
+    <div className={classes.scriptrun}>
+      <p className={classes.scriptTitle}>MyExercise</p>
+      <input
+        type="text"
+        value={age}
+        onChange={(e) => setAge(e.target.value)}
+        placeholder="Type age"
+      />
+      <p>Age: {age}</p>
+      <input
+        type="text"
+        value={trait}
+        onChange={(e) => setTrait(e.target.value)}
+        placeholder="Type trait"
+      />
+      <p>Trait: {trait}</p>
     </div>
   );
 }

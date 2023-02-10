@@ -1,7 +1,7 @@
 import React, { useReducer, useState } from "react";
 import MyTodo from "./MyTodo";
 import todoclasses from "./Todo.module.css";
-import classes from "../../../layout/Global.module.css";
+import classes from "../../../styles/Global.module.css";
 
 export const ACTIONS = {
   ADD_TODO: "add-todo",
@@ -41,27 +41,25 @@ export default function MyTodoApp() {
     setTask("");
   }
   return (
-    <div className={classes.cardItem}>
-      <div className={classes.niceFlow}>
-        <div className={todoclasses.todo}>
-          <h3>My Todo App 1</h3>
-          <form onSubmit={handleSubmit}>
-            <label for="addTask">Add new task: </label>
-            <input
-              id="addTask"
-              type="text"
-              value={task}
-              onChange={(e) => setTask(e.target.value)}
-            />
-          </form>
-          <div>
-            <h4>Todo List</h4>
-            <ol>
-              {todos.map((todo) => {
-                return <MyTodo key={todo.id} todo={todo} dispatch={dispatch} />;
-              })}
-            </ol>
-          </div>
+    <div className={classes.scriptrun}>
+      <div className={todoclasses.todo}>
+        <h3>My Todo App 1</h3>
+        <form onSubmit={handleSubmit}>
+          <label for="addTask">Add new task: </label>
+          <input
+            id="addTask"
+            type="text"
+            value={task}
+            onChange={(e) => setTask(e.target.value)}
+          />
+        </form>
+        <div>
+          <h4>Todo List</h4>
+          <ol>
+            {todos.map((todo) => {
+              return <MyTodo key={todo.id} todo={todo} dispatch={dispatch} />;
+            })}
+          </ol>
         </div>
       </div>
     </div>

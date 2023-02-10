@@ -1,6 +1,6 @@
 import React from "react";
 import { useLayoutEffect, useState } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 
 export default function CounterCaseLayoutEffect() {
   const [count, setCount] = useState(0);
@@ -8,13 +8,11 @@ export default function CounterCaseLayoutEffect() {
     console.log(count);
   }, [count]);
   return (
-    <div className={classes.cardItem}>
-      <div className={classes.niceFlow}>
-        <h3>useLayoutEffect</h3>
-        <div className={classes.displayMulti}>
-          <span>{count}</span>
-          <button onClick={() => setCount((c) => c + 1)}>Increment</button>
-        </div>
+    <div className={classes.scriptrun}>
+      <p className={classes.scriptTitle}>useLayoutEffect</p>
+      <div className={classes.horizontalFlex}>
+        <span>{count}</span>
+        <button onClick={() => setCount((c) => c + 1)}>Increment</button>
       </div>
     </div>
   );

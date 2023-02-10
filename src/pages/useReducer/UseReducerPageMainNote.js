@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
 
 export default function UseReducerPageMainNote() {
   return (
@@ -16,11 +17,11 @@ export default function UseReducerPageMainNote() {
       </p>
 
       <pre className={classes.formula}>
-        const [<span className={classes.variable}>state</span>,{" "}
-        <span className={classes.variable}>dispatch</span>] ={" "}
-        <span className={classes.thehook}>
-          useReducer(<span className={classes.func}>reducer</span>,{" "}
-          <span className={classes.value}>initialValue</span>)
+        const [<span className={fc.var}>state</span>,{" "}
+        <span className={fc.fn}>dispatch</span>] ={" "}
+        <span className={fc.foc}>
+          useReducer(<span className={fc.fn}>reducer</span>,{" "}
+          <span className={fc.val}>initialValue</span>)
         </span>
       </pre>
     </div>

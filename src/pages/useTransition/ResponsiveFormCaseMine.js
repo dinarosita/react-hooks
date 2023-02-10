@@ -1,7 +1,7 @@
 import React from "react";
 import { useTransition } from "react";
 import { useState } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 
 export default function ResponsiveFormCaseMine() {
   const [isPending, startTransition] = useTransition();
@@ -21,30 +21,28 @@ export default function ResponsiveFormCaseMine() {
     });
   }
   return (
-    <div className={classes.cardItem}>
-      <div className={classes.niceFlow}>
-        <h3>My exercise</h3>
-        <div>
-          <label for="input">Input: </label>
-          <input id="input" type="text" value={input} onChange={handleChange} />
-          <p>Updated input: {input}</p>
-          <p>Updated list of {LIST_SIZE}:</p>
-          {isPending ? (
-            "Loading..."
-          ) : (
-            <ol
-              style={{
-                overflow: "auto",
-                border: "3px solid lightgray",
-                height: "6rem",
-              }}
-            >
-              {list.map((item) => (
-                <li>{item}</li>
-              ))}
-            </ol>
-          )}
-        </div>
+    <div className={classes.scriptrun}>
+      <p className={classes.scriptTitle}>My exercise</p>
+      <div>
+        <label for="input">Input: </label>
+        <input id="input" type="text" value={input} onChange={handleChange} />
+        <p>Updated input: {input}</p>
+        <p>Updated list of {LIST_SIZE}:</p>
+        {isPending ? (
+          "Loading..."
+        ) : (
+          <ol
+            style={{
+              overflow: "auto",
+              border: "3px solid lightgray",
+              height: "6rem",
+            }}
+          >
+            {list.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ol>
+        )}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 import GetCaseListParam from "./GetCaseListParam";
 
 export default function GetCaseParam() {
@@ -19,23 +19,21 @@ export default function GetCaseParam() {
   };
 
   return (
-    <div className={classes.cardItem} style={theme} >
-      <div className={classes.niceFlow}>
+    <section className={classes.subsection}>
+      {" "}
+      <h3>With extra parameter</h3>
+      <div className={classes.scriptrun} style={theme}>
         {" "}
-        <h3>With extra parameter</h3>
-        <div>
-          <input
-            type="number"
-            value={number}
-            onChange={(e) => setNumber(parseInt(e.target.value))}
-          />
-
-          <GetCaseListParam getItems={getItems} />
-          <button onClick={() => setDark((prevDark) => !prevDark)}>
-            Toggle theme
-          </button>
-        </div>
+        <input
+          type="number"
+          value={number}
+          onChange={(e) => setNumber(parseInt(e.target.value))}
+        />
+        <GetCaseListParam getItems={getItems} />
+        <button onClick={() => setDark((prevDark) => !prevDark)}>
+          Toggle theme
+        </button>
       </div>
-    </div>
+    </section>
   );
 }

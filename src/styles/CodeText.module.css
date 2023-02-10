@@ -1,0 +1,51 @@
+.horizontalFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.verticalFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid indianred;
+  border-radius: 0.25rem;
+  padding: 0.75rem 0.5rem;
+}
+
+.codeBox {
+  border: 1px solid indianred;
+  border-radius: 0.25rem;
+  padding: 0.75rem 0.5rem 0.25rem;
+}
+
+.verticalFlex > .codeBox {
+  border: none;
+  border-radius: 0;
+  padding: 0.75em 0 0;
+  border-top: 1px dashed indianred;
+}
+
+.verticalFlex > .codeBox:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.verticalTitle,
+.codeBox > pre:first-child {
+  color: indianred;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.verticalTitle {
+  margin-bottom: 0;
+}
+
+.codeBox > pre:nth-child(2) {
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  margin-bottom: 0;
+}

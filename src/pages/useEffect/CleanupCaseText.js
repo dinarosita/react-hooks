@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "../../styles/CodeText.module.css";
 
 export default function CleanupCaseText() {
   const title1 = "ResourceCase.js";
@@ -23,9 +24,9 @@ export default function CleanupCaseText() {
 }`;
 
   return (
-    <div>
-      <div>
-        <h3>{title1}</h3>
+    <div className={classes.horizontalFlex}>
+        <div className={classes.codeBox}>
+        <pre>{title1}</pre>
         <pre>{text1}</pre>
       </div>
     </div>

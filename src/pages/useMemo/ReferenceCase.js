@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
 import ReferenceCasePlain from "./ReferenceCasePlain";
@@ -8,10 +8,10 @@ import ReferenceCaseUseMemo from "./ReferenceCaseUseMemo";
 
 export default function ReferenceCase() {
   return (
-    <section>
-      <div className={classes.niceFlow}>
+    <section className={classes.mainsection}>
+      
         <h2>Reference Case</h2>
-        <div className={classes.cardGroup}>
+        <div>
           <ReferenceCasePlain />
           <ReferenceCaseUseMemo />
         </div>
@@ -19,7 +19,6 @@ export default function ReferenceCase() {
         <ShowHideProvider>
           <ShowHideButton textFile=<ReferenceCaseText /> />
         </ShowHideProvider>
-      </div>
-    </section>
+ </section>
   );
 }

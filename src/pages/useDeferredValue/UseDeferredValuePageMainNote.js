@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
 
 export default function UseDeferredValuePageMainNote() {
   return (
@@ -12,7 +13,7 @@ export default function UseDeferredValuePageMainNote() {
         collected until it's handy for react to render together. For using, just
         wrap the wanted state with the hook.
       </p>
-      <pre className={classes.formula}>const <span className={classes.variable}>deferredState</span> = <span className={classes.thehook}>useDeferredValue(<span className={classes.variable}>state</span>)</span></pre>
+      <pre className={classes.formula}>const <span className={fc.var}>deferredVal</span> = <span className={fc.foc}>useDeferredValue(<span className={fc.val}>val</span>)</span></pre>
     </div>
   );
 }

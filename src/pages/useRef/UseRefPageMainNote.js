@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
+import fc from "../../styles/Formula.module.css"
 
 export default function UseRefPageMainNote() {
   return (
@@ -11,10 +12,10 @@ export default function UseRefPageMainNote() {
       </p>
 
       <pre className={classes.formula}>
-        const <span className={classes.variable}>refName</span> ={" "}
-        <span className={classes.thehook}>
+        const <span className={fc.var}>refName</span> ={" "}
+        <span className={fc.foc}>
           useRef(
-          <span className={classes.value}>initialValue</span>)
+          <span className={fc.val}>initialValue</span>)
         </span>
       </pre>
 

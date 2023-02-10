@@ -6,7 +6,7 @@ export default function UseRefPageAbout() {
   return (
     <About
       hookName="useRef"
-      tagline="Persist value between renders without triggering re-rendering"
+      tagline="Reference a value that's not needed for rendering"
       notes=<UseRefPageMainNote />
       videoLink="https://www.youtube.com/watch?v=t2ypzz6gJm0"
     />

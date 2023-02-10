@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/CodeText.module.css";
 
 export default function PrevValCaseText() {
   const title1 = "Previous value";
@@ -24,9 +24,9 @@ export default function PrevValCaseText() {
 }`;
 
   return (
-    <div className={classes.cardGroup}>
-      <div>
-        <h3>{title1}</h3>
+    <div className={classes.horizontalFlex}>
+        <div className={classes.codeBox}>
+        <pre>{title1}</pre>
         <pre>{text1}</pre>
       </div>
     </div>

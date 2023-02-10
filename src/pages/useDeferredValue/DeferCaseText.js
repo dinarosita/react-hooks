@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/CodeText.module.css";
 
 export default function DeferCaseText() {
   const title1a = "Regular Input";
@@ -116,30 +116,32 @@ export default function DeferCaseText() {
 }`;
 
   return (
-    <div className={classes.cardGroup}>
-      <div>
-        <div>
-          <h3>{title1a}</h3>
+    <div className={classes.horizontalFlex}>
+      <div className={classes.verticalFlex}>
+        <div className={classes.codeBox}>
+          <pre>{title1a}</pre>
           <pre>{text1a}</pre>
         </div>
-        <div>
-          <h3>{title1b}</h3>
+        <div className={classes.codeBox}>
+          <pre>{title1b}</pre>
           <pre>{text1b}</pre>
         </div>
       </div>
-      <div>
-        <div>
-          <h3>{title2a}</h3>
+
+      <div className={classes.verticalFlex}>
+        <div className={classes.codeBox}>
+          <pre>{title2a}</pre>
           <pre>{text2a}</pre>
         </div>
-        <div>
-          <h3>{title2b}</h3>
+        <div className={classes.codeBox}>
+          <pre>{title2b}</pre>
           <pre>{text2b}</pre>
         </div>
       </div>
-      <div>
-        <div>
-          <h3>{title3}</h3>
+
+      <div className={classes.verticalFlex}>
+        <div className={classes.codeBox}>
+          <pre>{title3}</pre>
           <pre>{text3}</pre>
         </div>
       </div>

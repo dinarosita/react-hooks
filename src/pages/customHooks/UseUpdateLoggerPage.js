@@ -1,13 +1,13 @@
 import React from "react";
-import classes from "../../layout/Global.module.css";
+import classes from "../../styles/Global.module.css";
 import ShowHideButton from "../../tools/ShowHideButton";
 import { ShowHideProvider } from "../../tools/ToggleContext";
 import UseUpdateLoggerPageText from "./UseUpdateLoggerPageText";
 
 export default function UseUpdateLoggerPage() {
   return (
-    <section>
-      <div className={classes.niceFlow}>
+    <section className={classes.mainsection}>
+      
         <h2>UseUpdateLogger</h2>
         <p className={classes.tagline}>Logging value changes</p>
 
@@ -16,7 +16,6 @@ export default function UseUpdateLoggerPage() {
         <ShowHideProvider>
           <ShowHideButton textFile=<UseUpdateLoggerPageText /> />
         </ShowHideProvider>
-      </div>
-    </section>
+ </section>
   );
 }
