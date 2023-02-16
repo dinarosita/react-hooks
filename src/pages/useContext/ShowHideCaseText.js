@@ -61,7 +61,7 @@ export function ShowHideProvider({ children }) {
 }`;
 
   return (
-    <div className={classes.horizontalFlex}>
+    <div className={classes.hFlex}>
       <div className={classes.codeBox}>
         <pre>{title3}</pre>
         <pre>{text3}</pre>

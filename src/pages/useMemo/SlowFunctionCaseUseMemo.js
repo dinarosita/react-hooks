@@ -15,12 +15,11 @@ export default function SlowFunctionCaseUseMemo() {
   return (
     <section className={classes.subsection}>
       <h3>useMemo</h3>
-      <div className={classes.insertNote}>
-        <p>
-          Double number is a slow function that is memoized. Changing theme is
-          now fast because double number doesn't rerendered.
-        </p>
-      </div>
+
+      <p>
+        Double number is a slow function that is memoized. Changing theme is now
+        fast because double number doesn't rerendered.
+      </p>
       <div className={classes.scriptrun} style={themeStyles}>
         <input
           type="number"

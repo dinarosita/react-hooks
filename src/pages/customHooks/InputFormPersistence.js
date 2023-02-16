@@ -18,7 +18,7 @@ export default function InputFormPersistence() {
         placeholder="Type name"
         onChange={(e) => setName(e.target.value)}
       />
-      <p>Name: {name}</p>
+      <div>Name: {name}</div>
 
       <input
         type="text"
@@ -26,7 +26,7 @@ export default function InputFormPersistence() {
         placeholder="Type address"
         onChange={(e) => setAddress(e.target.value)}
       />
-      <p>Address: {address}</p>
+      <div>Address: {address}</div>
     </div>
   );
 }

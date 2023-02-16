@@ -4,7 +4,7 @@ import fc from "../../styles/Formula.module.css"
 
 export default function UseCallbackPageMainNote() {
   return (
-    <div className={classes.insertNote}>
+    <>
       <p>
         This hook cache a function definition between rerenders. It works like
         useMemo, but for functions. The variable sets with useMemo will get the
@@ -39,6 +39,6 @@ export default function UseCallbackPageMainNote() {
         depending on the parameters. However this is probably not something we
         will encounter.
       </p>
-    </div>
+    </>
   );
 }

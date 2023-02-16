@@ -21,7 +21,7 @@ export default function IncrementCase() {
     <section className={classes.mainsection}>
       <h2>Increment Case</h2>
       <div className={classes.scriptrun}>
-        <div className={classes.horizontalFlex}>
+        <div className={classes.hFlex}>
           <button onClick={decrementCount}>-</button> <span>{count}</span>{" "}
           <button onClick={incrementCount}>+</button>
         </div>

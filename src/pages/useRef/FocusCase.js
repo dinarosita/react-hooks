@@ -10,19 +10,18 @@ export default function FocusCase() {
   return (
     <section className={classes.mainsection}>
       <h2>Focus on Input</h2>
-      <div className={classes.insertNote}>
-        <p>In a form, useRef can handily used to focus on certain input.</p>
-        <p className={classes.paraTitle}>
-          useRef doesn't change the state value.
-        </p>
-        <p>
-          Common mistake here is to use focus value and expect the state to
-          change. See how the the name in the feedback line doesn't actually get
-          changed into "Focus value" in the mistake illustration above.
-          Similarly, don't use it for appendChild/removeChild etc either, use
-          React and actual JSX for that.
-        </p>
-      </div>
+
+      <p>In a form, useRef can handily used to focus on certain input.</p>
+      <p className={classes.paraTitle}>
+        useRef doesn't change the state value.
+      </p>
+      <p>
+        Common mistake here is to use focus value and expect the state to
+        change. See how the the name in the feedback line doesn't actually get
+        changed into "Focus value" in the mistake illustration above. Similarly,
+        don't use it for appendChild/removeChild etc either, use React and
+        actual JSX for that.
+      </p>
       <div>
         <FocusCaseUseRef />
         <FocusCaseMistake />

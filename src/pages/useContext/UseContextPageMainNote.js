@@ -4,7 +4,7 @@ import fc from "../../styles/Formula.module.css";
 
 export default function UseContextPageMainNote() {
   return (
-    <div className={classes.insertNote}>
+    <>
       <p>
         Hook <code>useContext</code> allowing a context (with values within) to
         be used globally by en element and all of its descendants.
@@ -44,6 +44,6 @@ export default function UseContextPageMainNote() {
           &lt;/SomeContext<span className={fc.att}>.Provider</span>&gt;
         </span>
       </pre>
-    </div>
+    </>
   );
 }

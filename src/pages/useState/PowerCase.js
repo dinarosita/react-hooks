@@ -28,7 +28,7 @@ export default function PowerCase() {
       
         <h2>Power Case</h2>
         <div className={classes.scriptrun}>
-          <div className={classes.horizontalFlex}>
+          <div className={classes.hFlex}>
             <button onClick={startPower}>Start over</button>{" "}
             <button onClick={upPower}>Power up</button>
           </div>

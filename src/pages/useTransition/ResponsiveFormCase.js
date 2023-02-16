@@ -19,7 +19,7 @@ export default function ResponsiveFormCase() {
           box update, and the slow process can be rendered and finish in their
           own time.
         </p>
-      <div className={classes.horizontalFlex}>
+      <div className={classes.hFlex}>
         <ResponsiveFormCaseSluggish />
         <ResponsiveFormCaseUseTransition />
         <ResponsiveFormCaseMine />

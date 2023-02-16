@@ -31,7 +31,7 @@ function MyCount4App() {
   return (
     <div className={classes.scriptrun}>
       <p className={classes.scriptTitle}>My Count App: Increment 2</p>
-      <div className={classes.horizontalFlex}>
+      <div className={classes.hFlex}>
         <button onClick={decrementBy3}>-3</button>
         <div>{state.count}</div>
         <button onClick={incrementBy3}>+3</button>

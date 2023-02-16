@@ -33,7 +33,7 @@ export default function DeferCase() {
         />
       </div>
 
-      <div className={classes.horizontalFlex}>
+      <div className={classes.hFlex}>
         <DeferCaseRegularInput size={size} />
         <Bunny size={size} />
         <DeferCaseOneFile size={size} />

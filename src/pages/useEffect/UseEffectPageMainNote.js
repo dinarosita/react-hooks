@@ -4,7 +4,7 @@ import fc from "../../styles/Formula.module.css"
 
 export default function UseEffectPageMainNote() {
   return (
-    <div className={classes.insertNote}>
+    <>
       <p>
         useEffect is a hook that triggers side effect to happen when there's
         changes in its dependencies. The codes run asynchronously to the
@@ -33,6 +33,6 @@ export default function UseEffectPageMainNote() {
         They should be each closed when they are not needed anymore: before the
         next one is created.
       </p>
-    </div>
+    </>
   );
 }

@@ -80,7 +80,7 @@ export default class CompareCaseClassConsumer extends Component {
 `;
 
   return (
-    <div className={classes.horizontalFlex}>
+    <div className={classes.hFlex}>
       <div className={classes.codeBox}>
         <pre>{title1}</pre>
         <pre>{text1}</pre>

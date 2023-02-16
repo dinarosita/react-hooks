@@ -1,0 +1,22 @@
+.box {
+  margin: 1rem;
+  border: 1px solid cadetblue;
+  width: fit-content;
+}
+
+.box button:focus {
+    background-color: mistyrose;
+    color: indianred
+}
+
+.closeBtn {
+  float: right;
+}
+
+.content {
+  margin: 1rem;
+}
+
+.title {
+  margin-top: 2rem;
+}

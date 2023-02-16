@@ -116,8 +116,8 @@ export default function DeferCaseText() {
 }`;
 
   return (
-    <div className={classes.horizontalFlex}>
-      <div className={classes.verticalFlex}>
+    <div className={classes.hFlex}>
+      <div className={classes.vFlex}>
         <div className={classes.codeBox}>
           <pre>{title1a}</pre>
           <pre>{text1a}</pre>
@@ -128,7 +128,7 @@ export default function DeferCaseText() {
         </div>
       </div>
 
-      <div className={classes.verticalFlex}>
+      <div className={classes.vFlex}>
         <div className={classes.codeBox}>
           <pre>{title2a}</pre>
           <pre>{text2a}</pre>
@@ -139,7 +139,7 @@ export default function DeferCaseText() {
         </div>
       </div>
 
-      <div className={classes.verticalFlex}>
+      <div className={classes.vFlex}>
         <div className={classes.codeBox}>
           <pre>{title3}</pre>
           <pre>{text3}</pre>

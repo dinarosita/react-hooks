@@ -10,7 +10,7 @@ export default function TodoCase() {
   return (
     <section className={classes.mainsection}>
       <h2>Todo Case</h2>
-      <div className={classes.horizontalFlex}>
+      <div className={classes.hFlex}>
         <TodoApp />
         <MyTodoApp />
       </div>

@@ -18,14 +18,14 @@ export default function InputFormMine() {
         onChange={(e) => setAge(e.target.value)}
         placeholder="Type age"
       />
-      <p>Age: {age}</p>
+      <div>Age: {age}</div>
       <input
         type="text"
         value={trait}
         onChange={(e) => setTrait(e.target.value)}
         placeholder="Type trait"
       />
-      <p>Trait: {trait}</p>
+      <div>Trait: {trait}</div>
     </div>
   );
 }

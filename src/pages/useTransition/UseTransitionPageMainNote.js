@@ -4,7 +4,7 @@ import fc from "../../styles/Formula.module.css"
 
 export default function UseTransitionPageMainNote() {
   return (
-    <div className={classes.insertNote}>
+    <>
       <p>
         It's a hook to make react app faster and more responsive to improve user
         experience. It works by giving priority to tasks within the function, so
@@ -16,14 +16,14 @@ export default function UseTransitionPageMainNote() {
         <span className={fc.fn}>startTransition</span>] ={" "}
         <span className={fc.foc}>useTransition()</span>
       </pre>
-      <p className={classes.listTitle}>Returns 2 values:</p>
+      <p className={classes.paraTitle}>Returns 2 values:</p>
       <ul>
         <li>
-          <strong>isPending</strong>: What to do/display instead in the case of
+          <code>isPending</code>: What to do/display instead in the case of
           calculation not ready yet
         </li>
         <li>
-          <strong>startTransition</strong>: To wrap the low priority procedure.
+          <code>startTransition</code>: To wrap the low priority procedure.
         </li>
       </ul>
       <p className={classes.paraTitle}>Usage</p>
@@ -33,6 +33,6 @@ export default function UseTransitionPageMainNote() {
         much more rendering than normal. Can unnecesarrily burdening if not
         actually needed.
       </p>
-    </div>
+    </>
   );
 }

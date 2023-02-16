@@ -4,7 +4,7 @@ import fc from "../../styles/Formula.module.css"
 
 export default function UseLayoutEffectPageMainNote() {
   return (
-    <div className={classes.insertNote}>
+    <>
       <p>
         useLayoutEffect is similar to useEffect, except it happens
         synchronously, between DOM calculation and screen painting, so the
@@ -22,6 +22,6 @@ export default function UseLayoutEffectPageMainNote() {
         <span className={fc.fn}>layoutFn</span>,{" "}
         <span className={fc.dep}>[dependencies]</span>)</span>
       </pre>
-    </div>
+    </>
   );
 }

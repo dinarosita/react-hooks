@@ -11,7 +11,7 @@ export default function ExampleCase() {
     <section className={classes.mainsection}>
       
         <h2>Example Case</h2>
-        <div className={classes.horizontalFlex}>
+        <div className={classes.hFlex}>
           <ExampleCaseScenario />
           <ExampleCaseScenario />
         </div>

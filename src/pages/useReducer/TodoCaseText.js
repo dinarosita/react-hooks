@@ -85,7 +85,7 @@ export default function Todo({ todo, dispatch }) {
 `;
 
   return (
-    <div className={classes.horizontalFlex}>
+    <div className={classes.hFlex}>
         <div className={classes.codeBox}>
         <pre>{title1}</pre>
         <pre>{text1}</pre>

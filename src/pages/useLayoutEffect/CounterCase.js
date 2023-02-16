@@ -10,7 +10,7 @@ export default function CounterCase() {
   return (
     <section className={classes.mainsection}>
       <h2>Counter Case</h2>
-      <div className={classes.horizontalFlex}>
+      <div className={classes.hFlex}>
         <CounterCaseEffect />
         <CounterCaseLayoutEffect />
       </div>

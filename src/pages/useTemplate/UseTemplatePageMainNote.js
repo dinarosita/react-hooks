@@ -4,7 +4,7 @@ import fc from "../../styles/Formula.module.css"
 
 export default function UseTemplatePageMainNote() {
   return (
-    <div className={classes.insertNote}>
+    
       <p>Note</p>
 
       <pre className={classes.formula}>

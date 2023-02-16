@@ -5,7 +5,7 @@ import fc from "../../styles/Formula.module.css"
 
 export default function CustomHookPageMainNote() {
   return (
-    <div className={classes.insertNote}>
+    <>
       <p>
         We can create custom hook with prefix <code>use</code>. This prefic
         allow React to treat our own-made hook like regular hooks, such as the
@@ -22,6 +22,6 @@ export default function CustomHookPageMainNote() {
           {"}"}
         </span>
       </pre>
-    </div>
+    </>
   );
 }

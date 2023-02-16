@@ -9,16 +9,15 @@ import ReferenceCaseUseMemo from "./ReferenceCaseUseMemo";
 export default function ReferenceCase() {
   return (
     <section className={classes.mainsection}>
-      
-        <h2>Reference Case</h2>
-        <div>
-          <ReferenceCasePlain />
-          <ReferenceCaseUseMemo />
-        </div>
+      <h2>Reference Case</h2>
+      <div>
+        <ReferenceCasePlain />
+        <ReferenceCaseUseMemo />
+      </div>
 
-        <ShowHideProvider>
-          <ShowHideButton textFile=<ReferenceCaseText /> />
-        </ShowHideProvider>
- </section>
+      <ShowHideProvider>
+        <ShowHideButton textFile=<ReferenceCaseText /> />
+      </ShowHideProvider>
+    </section>
   );
 }

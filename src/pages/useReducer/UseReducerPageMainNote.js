@@ -4,7 +4,7 @@ import fc from "../../styles/Formula.module.css"
 
 export default function UseReducerPageMainNote() {
   return (
-    <div className={classes.insertNote}>
+    <>
       <p>
         useReducer is like useState, that it manages states and rerender
         component whenever the state changes. useReducer gives more concrete way
@@ -24,6 +24,6 @@ export default function UseReducerPageMainNote() {
           <span className={fc.val}>initialValue</span>)
         </span>
       </pre>
-    </div>
+    </>
   );
 }

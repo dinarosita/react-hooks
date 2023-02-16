@@ -15,8 +15,8 @@ export default function CodeText() {
   const text4 = String.raw`Text 4`;
 
   return (
-    <div className={classes.horizontalFlex}>
-      <div className={classes.verticalFlex}>
+    <div className={classes.hFlex}>
+      <div className={classes.vFlex}>
         <pre className={classes.verticalTitle}>Title</pre>
         <div className={classes.codeBox}>
           <pre>{title1}</pre>
@@ -28,7 +28,7 @@ export default function CodeText() {
         </div>
       </div>
 
-      <div className={classes.verticalFlex}>
+      <div className={classes.vFlex}>
         <pre className={classes.verticalTitle}>Title</pre>
         <div className={classes.codeBox}>
           <pre>{title3}</pre>

@@ -38,8 +38,8 @@ export default function UseUpdateLoggerPageText() {
   }, [key, value])
 }`;
   return (
-    <div className={classes.horizontalFlex}>
-      <div className={classes.verticalFlex}>
+    <div className={classes.hFlex}>
+      <div className={classes.vFlex}>
         <pre className={classes.verticalTitle}>useUpdateLogger without Key</pre>
         <div className={classes.codeBox}>
           <pre>{title2}</pre>
@@ -51,7 +51,7 @@ export default function UseUpdateLoggerPageText() {
         </div>
       </div>
 
-      <div className={classes.verticalFlex}>
+      <div className={classes.vFlex}>
         <pre className={classes.verticalTitle}>useUpdateLoggerMine with Key</pre>
         <div className={classes.codeBox}>
           <pre>{title4}</pre>

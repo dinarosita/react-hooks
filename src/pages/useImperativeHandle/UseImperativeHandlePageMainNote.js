@@ -4,7 +4,7 @@ import fc from "../../styles/Formula.module.css"
 
 export default function UseImperativeHandlePageMainNote() {
   return (
-    <div className={classes.insertNote}>
+    <>
       <p>
         Prerequisite: <code>useRef</code> for custom component.
       </p>
@@ -23,8 +23,7 @@ export default function UseImperativeHandlePageMainNote() {
         </span>
       </pre>
 
-      <p>
-        <code>useImperativeHandle</code> is a way to make custom ref. It takes 3
+      <p className={classes.paraTitle}>3
         properties:
       </p>
       <ul>
@@ -45,6 +44,9 @@ export default function UseImperativeHandlePageMainNote() {
           </ul>
         </li>
       </ul>
-    </div>
+
+      <p className={classes.paraTitle}>Usage</p>
+      <p>It should not be used very often at all. Only in very specific cases we should use it. In our confirmation modal case, we will see how it is used to handle group ref. 3 different button refs arranged as 1.</p>
+    </>
   );
 }

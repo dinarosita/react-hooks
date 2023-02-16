@@ -31,7 +31,7 @@ export default function CountApp() {
   return (
     <div className={classes.scriptrun}>
       <p className={classes.scriptTitle}>Count App</p>
-      <div className={classes.horizontalFlex}>
+      <div className={classes.hFlex}>
         <button onClick={decrement}>-</button>
         <div>{state.count}</div>
         <button onClick={increment}>+</button>

@@ -23,7 +23,7 @@ export default function ResourceCase() {
         require return clean up.
       </p>
       <div className={classes.scriptrun}>
-        <div className={classes.horizontalFlex}>
+        <div className={classes.hFlex}>
           <button onClick={() => setResourceType("Posts")}>Posts</button>
           <button onClick={() => setResourceType("Users")}>Users</button>
           <button onClick={() => setResourceType("Comments")}>Comments</button>

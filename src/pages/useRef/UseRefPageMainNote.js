@@ -4,7 +4,7 @@ import fc from "../../styles/Formula.module.css"
 
 export default function UseRefPageMainNote() {
   return (
-    <div className={classes.insertNote}>
+    <>
       <p>
         Hook <code>useRef</code> persist values between renders without causing
         re-rendering. It can be used to store mutable value that doesn't cause
@@ -27,6 +27,6 @@ export default function UseRefPageMainNote() {
         provide a way to allow changes in variable that doesn't cause
         re-rendering like <code>useState</code>
       </p>
-    </div>
+    </>
   );
 }

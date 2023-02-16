@@ -13,7 +13,7 @@ export default function CountCase() {
   return (
     <section className={classes.mainsection}>
       <h2>Count Case</h2>
-      <div className={classes.horizontalFlex}>
+      <div className={classes.hFlex}>
         <CountApp />
         <CountAppUsestate />
         <MyCount2App />

@@ -34,7 +34,7 @@ export default function CustomFocusCaseText1() {
 }`;
 
   return (
-    <div className={classes.horizontalFlex} >
+    <div className={classes.hFlex} >
       <div className={classes.codeBox}>
         <pre>{title1}</pre>
         <pre>{text1}</pre>

@@ -80,7 +80,7 @@ p.paraTitle + p {
 /*  */
 
 p + ul {
-  margin-top: 0rem;
+  margin-top: -.8rem;
   margin-bottom: 0;
 }
 
@@ -186,16 +186,16 @@ div.scriptrun + div.scriptrun {
   margin-top: 1rem;
 }
 
-.horizontalFlex {
+.hFlex {
   display: flex;
   gap: 1rem;
 }
 
-.horizontalFlex > * {
+.hFlex > * {
   padding: 0.2rem 0.5rem;
-  border: 2px solid slategrey;
+  border: 1px solid cadetblue;
   border-radius: 3px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .feedback {
   padding: 0.2rem 0.5rem;

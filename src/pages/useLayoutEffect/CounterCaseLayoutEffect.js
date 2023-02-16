@@ -10,7 +10,7 @@ export default function CounterCaseLayoutEffect() {
   return (
     <div className={classes.scriptrun}>
       <p className={classes.scriptTitle}>useLayoutEffect</p>
-      <div className={classes.horizontalFlex}>
+      <div className={classes.hFlex}>
         <span>{count}</span>
         <button onClick={() => setCount((c) => c + 1)}>Increment</button>
       </div>

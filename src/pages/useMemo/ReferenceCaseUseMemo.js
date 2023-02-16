@@ -22,12 +22,11 @@ export default function ReferenceCaseUseMemo() {
   return (
     <section className={classes.subsection}>
       <h3>With useMemo</h3>
-      <div className={classes.insertNote}>
-        <p>
-          themeStyles is an object variable.Using useMemo, it doesn't get
-          rerendered when changing number.
-        </p>
-      </div>
+
+      <p>
+        themeStyles is an object variable.Using useMemo, it doesn't get
+        rerendered when changing number.
+      </p>
       <div className={classes.scriptrun} style={themeStyles}>
         <input
           type="number"

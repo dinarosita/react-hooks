@@ -15,7 +15,7 @@ function CountAppUsestate() {
   return (
     <div className={classes.scriptrun}>
       <p className={classes.scriptTitle}>Count App useState</p>
-      <div className={classes.horizontalFlex}>
+      <div className={classes.hFlex}>
         <button onClick={decrement}>-</button> <div>{number}</div>
         <button onClick={increment}>+</button>
       </div>

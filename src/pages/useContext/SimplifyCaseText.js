@@ -104,8 +104,8 @@ export default function SimplifyCaseConsumer() {
   );
 }`;
   return (
-    <div className={classes.horizontalFlex}>
-      <div className={classes.verticalFlex}>
+    <div className={classes.hFlex}>
+      <div className={classes.vFlex}>
         <pre className={classes.verticalTitle}>{title1}</pre>
         <div className={classes.codeBox}>
           <pre>{title1a}</pre>
@@ -117,7 +117,7 @@ export default function SimplifyCaseConsumer() {
         </div>
       </div>
 
-      <div className={classes.verticalFlex}>
+      <div className={classes.vFlex}>
         <pre className={classes.verticalTitle}>{title2}</pre>
         <div className={classes.codeBox}>
           <pre>{title2a}</pre>

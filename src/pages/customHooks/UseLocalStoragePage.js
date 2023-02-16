@@ -12,7 +12,7 @@ export default function UseLocalStoragePage() {
     <section className={classes.mainsection}>
       <h2>useLocalStorage</h2>
       <p className={classes.tagline}>Input Persistence</p>
-      <div className={classes.horizontalFlex}>
+      <div className={classes.hFlex}>
         <InputFormRegular />
         <InputFormPersistence />
         <InputFormMine />

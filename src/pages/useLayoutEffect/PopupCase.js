@@ -12,7 +12,7 @@ export default function PopupCase() {
     <section className={classes.mainsection}>
       <h2>Popup Layout Case</h2>
       <React.StrictMode>
-        <div className={classes.horizontalFlex}>
+        <div className={classes.hFlex}>
           <PopupCaseEffect />
           <PopupCaseLayoutEffect />
           <PopupCaseWithoutEffect />

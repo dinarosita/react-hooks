@@ -18,7 +18,7 @@ export default function CompareCaseApp() {
         <button onClick={toggleTheme} style={{ width: "fit-content" }}>
           Toggle Theme
         </button>
-        <div className={classes.horizontalFlex}>
+        <div className={classes.hFlex}>
           <CompareCaseFunctionConsumer />
           <CompareCaseClassConsumer />
         </div>

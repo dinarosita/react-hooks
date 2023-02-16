@@ -52,7 +52,7 @@ export default CustomInput1;
 `;
 
   return (
-    <div className={classes.horizontalFlex}>
+    <div className={classes.hFlex}>
       <div className={classes.codeBox}>
         <pre>{title2}</pre>
         <pre>{text2}</pre>
