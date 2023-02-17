@@ -100,10 +100,11 @@ export default function UseDebugValuePageNotes() {
           </span>
         </pre>
         <p>
-          "Only run this function in development or if I have the DevTool open
+          "Only run this function in development, or if I have the DevTool open
           to be able to see what the result is. Otherwise, don't run this
           function at all."
         </p>
+        <p>When we are in production, or even when we are in DevTool but not in Components tab for the app, it's not even running.</p>
       </section>
     </>
   );
