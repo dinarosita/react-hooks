@@ -1,7 +1,6 @@
 import React, { useReducer, useState } from "react";
 import Todo from "./Todo";
 import classes from "../../../styles/Global.module.css";
-import todoclasses from "./Todo.module.css";
 
 
 export const ACTIONS = {
@@ -43,7 +42,7 @@ export default function TodoApp() {
   }
   return (
     <div className={classes.scriptrun}>
-      <div className={todoclasses.todo}>
+      <div>
         <p className={classes.scriptTitle}>Todo App</p>
         <form onSubmit={handleSubmit}>
           <input

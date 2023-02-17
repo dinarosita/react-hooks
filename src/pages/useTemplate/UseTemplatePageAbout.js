@@ -6,7 +6,7 @@ export default function UseTemplatePageAbout() {
   return (
     <About
       hookName="useTemplate"
-      tagline=""
+      tagline="Template"
       notes=<UseTemplatePageMainNote />
       videoLink=""
     />

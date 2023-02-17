@@ -1,13 +1,15 @@
-
 import React from "react";
-import UseTemplatePageAbout from "./UseTemplatePageAbout"
-import ExampleCase from "./ExampleCase";
+
+import TemplateSandBoxes from "./TemplateSandBoxes";
+import UseTemplatePageAbout from "./UseTemplatePageAbout";
+import TemplateCase from "./TemplateCase";
 
 export default function UseTemplatePage() {
   return (
     <main>
       <UseTemplatePageAbout />
-      <ExampleCase />
+      <TemplateCase />
+      <TemplateSandBoxes />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import CustomInput3 from './CustomInput3'
 
-export default function SandBox2() {
+export default function Sandbox2() {
     const [inputVal, setInputVal] = useState("Sun")
     const inputRef = useRef()
   return (

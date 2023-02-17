@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "../../styles/Global.module.css";
-import useLocalStorage from "./useLocalStorage";
+import useLocalStorage1 from "./useLocalStorage1";
 import useUpdateLogger from "./useUpdateLogger";
 
 export default function InputFormPersistence() {
-  const [name, setName] = useLocalStorage("name", "");
-  const [address, setAddress] = useLocalStorage("address", "");
+  const [name, setName] = useLocalStorage1("name", "");
+  const [address, setAddress] = useLocalStorage1("address", "");
   useUpdateLogger(name);
   useUpdateLogger(address);
 

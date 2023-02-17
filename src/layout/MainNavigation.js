@@ -43,6 +43,9 @@ function MainNavigation() {
           <li>
             <Link to="/react-hooks/useimperativehandle">useImperativeHandle</Link>
           </li>
+           <li>
+            <Link to="/react-hooks/usedebugvalue">useDebugValue</Link>
+          </li>
           <li>
             <Link to="/react-hooks/customhook">Custom Hook</Link>
           </li>

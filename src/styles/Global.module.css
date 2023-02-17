@@ -80,7 +80,7 @@ p.paraTitle + p {
 /*  */
 
 p + ul {
-  margin-top: -.8rem;
+  margin-top: -0.8rem;
   margin-bottom: 0;
 }
 
@@ -198,11 +198,21 @@ div.scriptrun + div.scriptrun {
   /* font-weight: bold; */
 }
 .feedback {
-  padding: 0.2rem 0.5rem;
+  padding: 0.4rem 0.5rem 0.2rem;
   border: 1px solid cadetblue;
   border-radius: 3px;
   font-weight: bold;
   color: cadetblue;
+  width: fit-content;
+  font-size: .8rem;
+  line-height: 1.2rem;
+}
+
+.feedbackTitle {
+    margin-bottom: -.5rem;
+    color: cadetblue;
+    font-size: .9rem;
+    font-weight: bold;
 }
 
 .overflowBox {

@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { useState } from "react";
 import CustomInput5 from "./CustomInput5";
 
-export default function SandBox3() {
+export default function Sandbox3() {
   const [val, setVal] = useState("Dog");
   const inputRef = useRef();
   return (
