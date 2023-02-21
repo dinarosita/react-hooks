@@ -2,6 +2,8 @@ import React from "react";
 import classes from "../../styles/Global.module.css";
 import TemplateCaseScenario from "./TemplateCaseScenario";
 import TemplateCaseText from "./TemplateCaseText";
+import ShowHideButton from "../../tools/ShowHideButton";
+import { ShowHideProvider } from "../../tools/ToggleContext";
 
 export default function TemplateCase() {
   return (

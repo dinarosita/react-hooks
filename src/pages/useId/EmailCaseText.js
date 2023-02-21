@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "../../styles/CodeText.module.css";
 
-export default function TemplateCaseText() {
+export default function EmailCaseText() {
   const title1 = "Title";
   const text1 = String.raw`Text`;
 

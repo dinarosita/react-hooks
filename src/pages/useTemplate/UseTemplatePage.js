@@ -1,6 +1,6 @@
 import React from "react";
 
-import TemplateSandBoxes from "./TemplateSandBoxes";
+import TemplateSandboxes from "./TemplateSandboxes";
 import UseTemplatePageAbout from "./UseTemplatePageAbout";
 import TemplateCase from "./TemplateCase";
 
@@ -9,7 +9,7 @@ export default function UseTemplatePage() {
     <main>
       <UseTemplatePageAbout />
       <TemplateCase />
-      <TemplateSandBoxes />
+      <TemplateSandboxes />
     </main>
   );
 }

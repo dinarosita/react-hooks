@@ -32,19 +32,31 @@ function MainNavigation() {
             <Link to="/react-hooks/usecallback">useCallback</Link>
           </li>
           <li>
-            <Link to="/react-hooks/uselayouteffect">useLayoutEffect &#10710;</Link>
+            <Link to="/react-hooks/uselayouteffect">
+              useLayoutEffect &#10710;
+            </Link>
           </li>
           <li>
             <Link to="/react-hooks/usetransition">useTransition</Link>
           </li>
           <li>
-            <Link to="/react-hooks/usedeferredvalue">useDeferredValue &#10710;</Link>
+            <Link to="/react-hooks/usedeferredvalue">
+              useDeferredValue &#10710;
+            </Link>
           </li>
           <li>
-            <Link to="/react-hooks/useimperativehandle">useImperativeHandle</Link>
+            <Link to="/react-hooks/useimperativehandle">
+              useImperativeHandle
+            </Link>
           </li>
-           <li>
+          <li>
             <Link to="/react-hooks/usedebugvalue">useDebugValue</Link>
+          </li>
+          <li>
+            <Link to="/react-hooks/useid">useId</Link>
+          </li>
+          <li>
+            <Link to="/react-hooks/useeffectevent">useEffectEvent</Link>
           </li>
           <li>
             <Link to="/react-hooks/customhook">Custom Hook</Link>
@@ -52,6 +64,7 @@ function MainNavigation() {
           <li>
             <Link to="/react-hooks/randomtips">Random Tips</Link>
           </li>
+          
         </ul>
       </nav>
     </header>
